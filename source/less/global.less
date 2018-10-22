@@ -34,16 +34,39 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
 @media (min-width: 768px) {
   .container {
-    width: 640px;
-    padding: 0 64px;
+    width: 660px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 960px;
-    padding: 0 120px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .container {
+    width: 660px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
   }
 }

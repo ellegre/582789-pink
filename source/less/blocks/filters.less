@@ -2,9 +2,6 @@
 	background-color: @white;
 	font-size: 18px;
 	line-height: 30px;
-  padding: 0 20px;
-  margin: 0 auto;
-  width: 940px;
 }
 
 .filters__text {
@@ -139,10 +136,6 @@
 }
 
 @media (max-width: @desktop-width) {
-  .filters {
-    width: 620px;
-  }
-
   .filters__list--achievement {
     display: block;
   }
@@ -179,11 +172,6 @@
 }
 
 @media (max-width: @tablet-width) {
-  .filters {
-    width: 280px;
-    padding: 0 20px;
-  }
-
   .filters__form {
     display: flex;
   }
@@ -191,12 +179,13 @@
   .filters__fildset {
     border: none;
   }
+
   .filters__user-container {
     width: 280px;
     padding: 0;
   }
 
-  .filters__user-contacts legend {
+  .filters__to-hide {
     display: none;
   }
 

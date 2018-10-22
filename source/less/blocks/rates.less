@@ -1,17 +1,18 @@
 .rates {
 	background-color: @gray;
-	text-align: center;
 }
 
 .rates__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding-top: 65px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .rates__table {
-	text-align: center;
 	width: 100%;
+  border-color: @table-border;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .rates__value {
@@ -25,10 +26,14 @@
 	font-weight: 700;
   color: @white;
   text-transform: uppercase;
+  border: 2px solid @table-border;
+
+
 }
 
 .rates__value:first-child {
   opacity: 0;
+  border: none;
 }
 
 .rates__value--hit {
@@ -46,16 +51,22 @@
   background-repeat: no-repeat;
 }
 
+.rates__field-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .rates__check-mark {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../img/icon-yes.svg") no-repeat 50% 50%;
+  background: url("../img/icon-yes.svg") no-repeat 100% 50%;
   vertical-align: middle;
 }
 
 .rates__cross {
   display: inline-block;
+  text-align: center;
   width: 40px;
   height: 40px;
   background: url("../img/icon-no.svg") no-repeat 50% 50%;
@@ -73,29 +84,64 @@
 .rates__field {
 	line-height: 30px;
   font-size: 18px;
+  text-transform: uppercase;
   background-color: @white;
-  width: 235px;
+  width: 155px;
   padding: 20px 18px;
-  text-align: center;
+  border: 2px solid @table-border;
+  white-space: nowrap;
 }
 
 .rates__field:first-child {
   text-align: left;
 }
 
+.rates__first-column {
+  display: none;
+}
 
 .rates__toggles {
 	margin: 0;
 	padding-bottom: 45px;
 }
 
-@media (min-width: @tablet-width) {
-  .rates__wrapper {
-    width: 620px;
-  }
+.rates__field-to-hide {
+  display: inline-block;
+}
 
+@media (min-width: @tablet-width) {
   .rates__value--hit::before {
    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .rates__field-container {
+    justify-content: center;
+  }
+
+  .rates__field{
+    text-transform: none;
+  }
+
+  .rates__wrapper {
+    width: 620px;
+    overflow: visible;
+  }
+
+  .rates__first-column {
+    display:  table;
+  }
+
+  .rates__field:first-child {
+    width: 155px;
+  padding: 20px 18px;
+  }
+
+  .rates__field-to-hide {
+    display: none;
+  }
+
+  .rates__table {
+    text-align: center;
   }
 }
 
@@ -103,6 +149,4 @@
   .rates__wrapper {
     width: 940px;
   }
-
-
 }
