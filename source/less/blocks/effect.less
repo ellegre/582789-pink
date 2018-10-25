@@ -17,9 +17,42 @@
 }
 
 .effect__position-wrapper {
+  position: relative;
   margin-left: 310px;
   text-align: left;
   padding: 90px 0;
+}
+
+.effect__position-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
+  border: 12px solid @red;
+  z-index: 3;
+  top: 111px;
+  left: -285px;
+}
+
+.effect__position-wrapper::after {
+  position: absolute;
+  content: "24";
+  width: 114px;
+  height: 45px;
+  color:@red;
+  z-index: 4;
+  top: 186px;
+  font-size: 96px;
+  font-weight: 700;
+  left: -254px;
+}
+
+.effect__wrapper {
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 34%;
+  background-position: 6% 57%;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,6 +63,26 @@
 
 @media (min-width: @desktop-width) {
   .effect {
-    display: block;
+    background-color: @gray;
+  }
+
+  .effect__wrapper {
+    padding: 40px;
+    background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 0 57%;
+  }
+
+  .effect__position-wrapper::before {
+    top: 82px;
+    left: -312px;
+    width: 180px;
+    height: 180px;
+    border: 14px solid @red;
+  }
+
+  .effect__position-wrapper::after {
+    top: 167px;
   }
 }

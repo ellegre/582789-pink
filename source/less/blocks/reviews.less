@@ -2,6 +2,24 @@
 	text-align: center;
   background-color: @white;
   position: relative;
+  padding-bottom: 40px;
+}
+
+.reviews::before {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 79px;
+  height: 64px;
+  top: 53px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  background-image: url("../img/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
 }
 
 .reviews__list {
@@ -25,7 +43,6 @@
 
 .reviews-description {
 	line-height: 30px;
-	margin-bottom: 40px;
 }
 
 .reviews__prev {
@@ -74,5 +91,13 @@
 
   .reviews__next {
     display: block;
+  }
+
+  .reviews::before {
+    display: block;
+  }
+
+  .reviews {
+      padding-top: 120px;
   }
 }
