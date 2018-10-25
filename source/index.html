@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper container">
         <a class="page-header__logo"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
         <g>
         <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -35,7 +35,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink для обработки и украшения фотографий</h1>
       <section class="promo">
-        <div class="promo__wrapper">
+        <div class="promo__wrapper container">
           <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
           <div class="promo__download">
             <a href="https://itunes.apple.com" class="promo__link">Скачать приложение</a>
@@ -49,13 +49,13 @@
         </div>
       </section>
       <div class="tagline">
-        <div class="tagline__wrapper">
+        <div class="tagline__wrapper container">
           <p class="tagline__text">Устали от серости мегаполиса?</p>
           <p class="tagline__text tagline__text--center">Нам есть, что вам предложить!</p>
         </div>
       </div>
       <section class="advantages">
-        <div class=" advantages__wrapper">
+        <div class=" advantages__wrapper container">
           <h2 class="visually-hidden">Преимущества приложения</h2>
           <div class="advantages__list-container">
             <ul class="advantages__list">
@@ -76,7 +76,7 @@
         </div>
       </section>
       <section class="effect">
-        <div class="effect__wrapper">
+        <div class="effect__wrapper container">
           <div class="effect__position-wrapper">
             <h2 class="effect__title">Эффект на 24 часа!</h2>
             <p class="effect__text">Британские ученые провели исследования и доказали,
@@ -86,7 +86,7 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="reviews__wrapper slider container">
           <h2 class="visually-hidden">Отзывы</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
@@ -95,8 +95,8 @@
               <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
-              <p class="reviews__age">25 лет, водитель трамвая</p>
+              <h3 class="reviews__title">Николай Иванов</h3>
+              <p class="reviews__age">25 лет, водитель грузовика</p>
               <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item slider__item">
@@ -105,42 +105,98 @@
               <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <div class="reviews__controls slider__controls">
+            <input id="review-1" type="radio" name="reviews-toggle" class="slider__toggle slider__toggle--active">
+            <input id="review-2" type="radio" name="reviews-toggle" class="slider__toggle">
+            <input id="review-3" type="radio" name="reviews-toggle" class="slider__toggle">
+            <label class="reviews__label" for="review-1"></label>
+            <label class="reviews__label" for="review-2"></label>
+            <label class="reviews__label" for="review-3"></label>
+          </div>
+          <a class="reviews__prev slider__arrow slider__arrow--left" href="#">
+            <svg class="review-slider__arrow-path review-slider__arrow-path--disabled" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            </svg>Пред.
+          </a>
+          <a class="reviews__next slider__arrow slider__arrow--right" href="#">
+            <svg class="review-slider__arrow-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            </svg>След.
+          </a>
         </div>
       </section>
       <section class="rates">
-        <div class="rates__wrapper">
+        <div class="rates__wrapper container">
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="rates__table">
             <tr class="rates__slider-item">
-              <th class="rates__value">Анлим <span class="rates__price">9,99&#160;usd</span></th>
+              <th class="rates__value rates__first-column">Анлим <span class="rates__price">9,99&#160;usd</span></th>
               <th class="rates__value">База  <span class="rates__price">1,99&#160;usd</span></th>
               <th class="rates__value rates__value--hit">Стандарт <span class="rates__price">3,99&#160;usd</span></th>
               <th class="rates__value">Анлим <span class="rates__price">9,99&#160;usd</span></th>
             </tr>
             <tr class="rates__slider-item">
-              <td class="rates__field">Розовый фильтр</td>
-              <td class="rates__field"><span class="rates__check-mark"></span></td>
-              <td class="rates__field"><span class="rates__check-mark"></span></td>
-              <td class="rates__field"><span class="rates__check-mark"></span></td>
+              <td class="rates__field rates__first-column">Розовый фильтр</td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Розовый фильтр</div>
+                  <div class="rates__check-mark"></div>
+                </div>
+              </td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Розовый фильтр</div>
+                  <div class="rates__check-mark"></div>
+                </div>
+              </td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Розовый фильтр</div>
+                  <div class="rates__check-mark"></div>
+                </div>
+              </td>
             </tr>
             <tr class="rates__slider-item">
-              <td class="rates__field">Смайлики</td>
-              <td class="rates__field"><span class="rates__cross"></span></td>
-              <td class="rates__field"><span class="rates__check-mark"></span></td>
-              <td class="rates__field"><span class="rates__check-mark"></span></td>
+              <td class="rates__field rates__first-column">Смайлики</td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Смайлики</div>
+                  <div class="rates__cross"></div>
+                </div>
+              </td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Смайлики</div>
+                  <div class="rates__check-mark"></div>
+                </div>
+              </td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Смайлики</div>
+                  <div class="rates__check-mark"></div>
+                </div>
+              </td>
             </tr>
             <tr class="rates__slider-item">
-              <td class="rates__field">Комментарии</td>
-              <td class="rates__field"><span class="rates__cross"></span></td>
-              <td class="rates__field"><span class="rates__cross"></span></td>
-              <td class="rates__field"><span class="rates__check-mark"></span></td>
+              <td class="rates__field rates__first-column">Комментарии</td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Комментарии</div>
+                  <div class="rates__cross"></div>
+                </div>
+              </td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Комментарии</div>
+                  <div class="rates__cross"></div>
+                </div>
+              </td>
+              <td class="rates__field">
+                <div class="rates__field-container">
+                  <div class="rates__field-to-hide">Комментарии</div>
+                  <div class="rates__cross"></div>
+                </div>
+              </td>
             </tr>
           </table>
           <p class="rates__toggles slider__toggles">
@@ -151,7 +207,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper container">
           <h2 class="visually-hidden">Наши контакты</h2>
           <p class="contacts__title">Остались&#160;вопросы? Свяжитесь&#160;c&#160;нами!</p>
           <div class="contacts__wrapper-data">
@@ -171,10 +227,11 @@
         </div>
       </section>
       <div class="map">
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.8025504860293!2d30.320321682850754!3d59.93693004319571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1540283057468" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </main>
     <footer class="page-footer page-footer--none">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a href="index.html" class="page-footer__logo">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>

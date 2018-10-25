@@ -15,8 +15,8 @@
 	margin-left: 5px;
 	font-size: 12px;
 	line-height: 24px;
-  	font-weight: 300;
-  	text-transform: uppercase;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .user-list__text {
@@ -40,18 +40,44 @@
 }
 
 .user-list__content-container {
-  padding: 23px 20px;
+  padding: 23px 0;
 }
 
-.user-list__article {
-  padding: 23px 20px;
+.user-list__button {
+  border: none;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: @gray;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.filters__button {
+  width: 320px;
+  padding: 20px 0;
+  color: @white;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: @green;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+    }
+
+    &:active {
+      color: @green-pale;
+    }
+
+    &:disabled {
+      color: @white;
+      background-color: @gray;
+    }
 }
 
 @media (min-width: @tablet-width) {
-  .user-list {
-    width: 620px;
-    padding: 0 20px;
-  }
   .user-list {
     .flex;
     justify-content: space-between;
@@ -76,11 +102,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .user-list {
-    width: 940px;
-    padding: 0;
-  }
-
   .user-list__likes-wrapper {
     right: 20px;
   }
