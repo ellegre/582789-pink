@@ -43,7 +43,7 @@
 }
 
 .filters__input {
-	padding: 20px 20px;
+	padding: 15px 20px;
 	font-size: 18px;
 	line-height: 30px;
 	margin-bottom: 25px;
@@ -219,22 +219,25 @@
   position: relative;
 }
 
-.filters__input-up::after {
+.filters__upside {
+  position: relative;
+}
+
+.filters__upside::after {
   position: absolute;
   content: "";
   width: 60px;
   height: 60px;
-  top: 10px;
-  left: 10px;
+  top: 2px;
+  right: 0px;
   z-index: 2;
-  background-color: @gray;
+  background-color: @table-border;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 0;
+  background-position: 50% 50%;
 }
 
-.filters__input-up--letter::after {
+.filters__upside--letter::after {
   background-image: url("../img/icon-mail.svg");
 }
 

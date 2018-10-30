@@ -98,6 +98,12 @@
   background-repeat: no-repeat;
   background-position: 49% 199%, center 0px;
   background-size: 55%, cover;
+  @media (min-resolution: @retina-dpi),
+          (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-tablet@2x.png"),
+                      url("../img/bg-back-tablet@2x.jpg");
+    background-size: 1400px auto, 2400px auto;
+    }
   }
 
   .promo__link {
