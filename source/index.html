@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__wrapper container">
+    <header class="page-header page-header--iphone">
+      <div class="page-header__wrapper">
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
@@ -20,7 +20,7 @@
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
+          <div class="main-nav__wrapper container">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
               <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
@@ -30,23 +30,20 @@
           </div>
         </nav>
       </div>
+      <div class="promo">
+        <div class="promo container">
+          <a href="https://itunes.apple.com" class="promo__link">Скачать приложение</a>
+          <ul class="promo__list">
+            <li class="promo__item"><a class="promo__list-link promo__list-link--apple" href="https://www.apple.com" class="apple">Эппл</a></li>
+            <li class="promo__item"><a class="promo__list-link promo__list-link--android" href="https://play.google.com/store" class="android">Андроид</a></li>
+            <li class="promo__item"><a class="promo__list-link promo__list-link--windows" href="https://www.microsoft.com/en-us/store/" class="windows">Виндоус</a></li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink для обработки и украшения фотографий</h1>
-      <section class="promo">
-        <div class="promo__wrapper container">
-          <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
-          <div class="promo__download">
-            <a href="https://itunes.apple.com" class="promo__link">Скачать приложение</a>
-            <ul class="promo__list">
-              <li class="promo__item"><a class="promo__list-link promo__list-link--apple" href="https://www.apple.com" class="apple">Эппл</a></li>
-              <li class="promo__item"><a class="promo__list-link promo__list-link--android" href="https://play.google.com/store" class="android">Андроид</a></li>
-              <li class="promo__item"><a class="promo__list-link promo__list-link--windows" href="https://www.microsoft.com/en-us/store/" class="windows">Виндоус</a></li>
-            </ul>
-            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
-        </div>
-      </section>
       <div class="tagline">
         <div class="tagline__wrapper container">
           <p class="tagline__text">Устали от серости мегаполиса?</p>
