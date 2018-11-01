@@ -1,0 +1,41 @@
+.radio {
+  margin-bottom: 50px;
+}
+
+.radio__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 10px 10px;
+  padding-left: 80px;
+}
+
+
+.radio__label::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 8px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid @table-border;
+  background-color: @white;
+}
+
+.radio__field[type="radio"]:checked ~ .radio__label::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 3;
+}
+
+.radio__field[type="radio"]:hover ~ .radio__label::before,
+.radio__field[type="radio"]:focus ~ .radio__label::before {
+ border: 2px solid @black;
+}
+
+.radio__field[type="radio"]:active ~ .fradio__label::before {
+  border: 2px solid @red;
+}

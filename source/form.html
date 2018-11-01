@@ -42,21 +42,21 @@
         <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
       </div>
       <form class="filters__form container" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filters__user-data filters__fildset">
+        <fieldset class="filters__fieldset filters__fieldset--user-data">
           <p class="input">
             <label class="input__label" for="user-surname">Фамилия:</label>
             <input class="input__field" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
           </p>
           <p class="input">
             <label class="input__label" for="user-name">Имя:</label>
-            <input class="input__field" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
+            <input class="input__field input__field--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
           </p>
           <p class="input">
             <label class="input__label" for="user-middle-name">Отчество:</label>
             <input class="input__field" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
-        <fieldset class="filters__app filters__fildset" >
+        <fieldset class="filters__fieldset filters__fieldset--app" >
           <legend class="filters__legend filters__legend--to-hide">С каким приложением путешествовали?</legend>
           <p class="filters__app-text">С каким приложением путешествовали?</p>
           <ul class="filters__list filters__list--radio">
@@ -80,20 +80,20 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filters__user-contacts filters__fildset">
-          <legend class="filters__legend filters__legent--to-hide">Контактная информация</legend>
+        <fieldset class="filters__fieldset filters__fieldset--user-contacts">
+          <legend class="filters__legend filters__legend--to-hide">Контактная информация</legend>
           <div class="filters__user-container">
             <p class="input input--upside input--tel">
-              <input class="input__field input__field--up" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
-              <label class="input__label input__label--down" for="user-tel">Номер телефона</label>
+              <input class="input__field" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <label class="input__label" for="user-tel">Номер телефона</label>
             </p>
             <p class="input input--upside input--letter">
-              <input class="input__field input__field--up" id="user-email" type="email" name="email" placeholder="Введите почту *">
-              <label class="input__label input__label--down" for="user-email">Адрес почты</label>
+              <input class="input__field" id="user-email" type="email" name="email" placeholder="Введите почту *">
+              <label class="input__label" for="user-email">Адрес почты</label>
             </p>
           </div>
         </fieldset>
-        <fieldset class="filters__achievement filters__fildset">
+        <fieldset class="filters__fieldset filters__fieldset--achievement">
           <legend class="filters__legend filters__legend--to-hide">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</legend>
           <p class="filters__app-text">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</p>
           <ul class="filters__list filters__list--achievement">
@@ -135,7 +135,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filters__emotions filters__fildset">
+        <fieldset class="filters__fieldset filters__fieldset--emotions">
           <legend class="filters__legend">Опишите свои эмоции</legend>
           <p class="input">
             <label class="input__label" for="user-text"></label>
