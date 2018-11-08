@@ -38,3 +38,9 @@
 .radio__field[type="radio"]:active ~ .fradio__label::before {
   border: 2px solid @red;
 }
+
+@media (max-width: @tablet-width) {
+  .radio__label::before {
+    left: -13px;
+  }
+}

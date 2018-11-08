@@ -1,62 +1,70 @@
 .page-header {
-	background-color: @dark-blue;
+	background-color: @darkest-blue;
   min-height: 730px;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 54% 100%, center -218px;
-  background-size: 40%, cover;
+  background-position: 188px 433px, center 256px;
+  background-size: auto, auto;
 }
 
-.page-header--iphone {
-
-}
-
-.page-header__logo svg {
+.page-header__logo-mobile {
   width: 80px;
   height: 30px;
+  margin-right: 199px;
+  margin-top: 3px;
 }
 
-.page-header__logo-white-tablet {
+.page-header__logo-tablet {
   display: none;
 }
 
-.page-header__logo-white-desktop {
+.page-header__logo-desktop {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__logo svg {
+  .page-header__logo-tablet {
     display: block;
+    margin-right: 474px;
     width: 150px;
-    height: auto;
+    height: 80px;
+  }
+
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: none;
   }
 
   .page-header {
   background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 49% 199%, center 0px;
-  background-size: 55%, cover;
+  background-position: 67% 104%, center 256px;
+  background-size: 80%, auto 75%;
   @media (min-resolution: @retina-dpi),
           (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-hand-tablet@2x.png"),
                       url("../img/bg-back-tablet@2x.jpg");
-    background-size: 1400px auto, 2400px auto;
     }
   }
 
-  .page-header__logo-white-tablet {
-    display: inline-block;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__wrapper {
-    display: flex;
-    align-items: center;
+  .page-header__logo-tablet {
+    display: none;
   }
 
-  .page-header__logo {
-    margin-right: 140px;
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
   }
 
   .page-header {

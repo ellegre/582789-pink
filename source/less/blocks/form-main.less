@@ -29,7 +29,11 @@
   text-align: center;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.form-main__story--to-hide {
+  display: none;
 }
 
 .form-main__text {
@@ -39,7 +43,17 @@
 
 @media (min-width: @tablet-width) {
   .form-main__story {
-    width: 620px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 49px;
+  }
+
+  .form-main__text {
+    font-size: 18px;
+  }
+
+  .form-main__story--to-hide {
+    display: block;
   }
 
   .form-main__intro-container {
@@ -54,7 +68,6 @@
 
   .form-main__text {
     width: 760px;
-    font-size: 18px;
     margin: 0 auto;
   }
 
