@@ -8,14 +8,27 @@
 
 .user-photos__text {
 	margin: 0;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 46px;
+	padding-bottom: 47px;
 	text-align: center;
+  line-height: 30px;
+}
+
+.user-photos__post-all {
+  padding-top: 20px;
+  padding-bottom: 44px;
+}
+
+.user-photos__post-text {
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
 }
 
 .user-photos__list {
 	.list;
 }
+
 
 @media (min-width: @tablet-width) {
    .user-photos__text-wrapper {
@@ -23,21 +36,32 @@
   }
 
   .user-photos__text {
-    width: 446px;
+    width: 533px;
     font-size: 18px;
     line-height: 30px;
     margin: 0 auto;
+    padding-top: 93px;
+    padding-bottom: 75px;
   }
 
   .user-list__likes-wrapper {
     position: absolute;
-    top: 24px;
-    right: 20px;
+    top: 22px;
+    right: 62px;
     z-index: 3;
   }
 
   .user-list__content-container {
     position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 47px;
+  }
+
+  .user-list__button--first {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 107px;
   }
 }
 
