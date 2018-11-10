@@ -83,6 +83,9 @@
 
   .user-list__article {
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
   }
 
   .user-list__content-container {
@@ -91,14 +94,22 @@
 
   .user-list__like-wrapper {
     margin-top: auto;
+    position: relative;
   }
 
   .user-list__content-wrapper {
-    padding: 17px 27px;
+    padding: 19px 27px;
     padding-bottom: 23px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 107px;
+  }
+
+  .user-list__button {
+    position: absolute;
+    top: 8px;
+    left: 230px;
   }
 
 }
@@ -106,5 +117,13 @@
 @media (min-width: @desktop-width) {
   .user-list__likes-wrapper {
     right: 20px;
+  }
+
+  .user-list__content-container {
+    padding: 24px 28px;
+  }
+
+  .user-list__item {
+    margin-bottom: 55px;
   }
 }
