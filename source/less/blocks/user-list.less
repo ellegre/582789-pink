@@ -66,6 +66,32 @@
  margin: 0;
 }
 
+
+.user-list__content-container {
+  position: relative;
+}
+
+.user-list__content-container::before {
+  position: absolute;
+  padding: 7px 3px;
+  content: "панорама дня";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: @white;
+  width: 136px;
+  height: 23px;
+  text-align: center;
+  vertical-align: middle;
+  top: -140px;
+  right: 67px;
+  left: calc(100% - 140px);
+  z-index: 2;
+  background-color: @red;
+}
+
 @media (min-width: @tablet-width) {
   .user-list {
     .flex;
@@ -110,6 +136,10 @@
     position: absolute;
     top: 8px;
     left: 230px;
+  }
+
+  .user-list__content-container::before {
+    top: -454px;
   }
 
 }
