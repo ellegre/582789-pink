@@ -13,6 +13,7 @@
 }
 
 .filters__legend {
+  display: block;
   text-align: center;
   font-size: 14px;
   color: @red;
@@ -21,8 +22,6 @@
 }
 
 .filters__fieldset {
-  margin: 0;
-  padding: 0;
   padding-top: 49px;
   margin-bottom: 65px;
   border: 2px solid @table-border;
@@ -33,8 +32,8 @@
   border: none;
   margin-bottom: 50px;
   padding-top: 17px;
-}
 
+}
 
 .filters__fieldset--user-data p {
   margin-bottom: 55px;
@@ -100,13 +99,11 @@
   padding: 0px 60px;
   padding-bottom: 37px;
   padding-top: 6px;
-  width: 100%;
   margin-top: -10px;
 }
 
 .filters__send-form {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   margin-bottom: -35px;
 }
@@ -154,10 +151,6 @@
     padding: 0 60px;
   }
 
-  .filters__fieldset {
-    width: 100%;
-  }
-
   .filters__fieldset--user-data .input__field {
     width: 523px;
   }
@@ -177,6 +170,9 @@
 
   .filters__fieldset--app {
     margin-left: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .filters__list--radio {
@@ -184,7 +180,7 @@
   }
 
   .filters__fieldset--achievement {
-    padding-top: 39px;
+    padding-top: 0px;
   }
 
   .filters__send-form {
@@ -201,6 +197,15 @@
 
   .filters__send-form--to-hide {
     display: none;
+  }
+
+  .filters__span {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: @white;
+    width: 364px;
+    margin-left: 145px;
   }
 
 }
@@ -225,15 +230,18 @@
 
   .filters__fieldset--achievement {
     background-color: @gray;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
+    width: 100%;
   }
 
   .filters__fieldset--app {
     background-color: @gray;
+    width: 100%;
   }
 
   .filters__list--achievement {
     padding: 0;
+    margin-left: 15px;
   }
 
   .filters__fieldset--user-data p {
@@ -265,9 +273,9 @@
   }
 
   .filters__fieldset--user-data {
-    width: 280px;
     order: 1;
     margin-bottom: 43px;
+    width: 0;
   }
 
   .filters__fieldset--achievement {
@@ -276,7 +284,9 @@
 
   .filters__fieldset--user-contacts {
     order: 3;
-    margin-bottom: 13px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding-top: 7px;
   }
 
   .filters__fieldset--app {
@@ -289,6 +299,7 @@
   .filters__fieldset--emotions {
     order: 5;
     margin-bottom: 39px;
+
   }
 
   .filters__fieldset--emotions legend {

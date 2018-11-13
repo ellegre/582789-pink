@@ -1,10 +1,8 @@
 .tagline {
   background-color: @white;
   padding-top: 18px;
-  padding-bottom: 3px;
+  padding-bottom: 8px;
 }
-
-
 
 .tagline__wrapper {
   text-align: center;
@@ -18,13 +16,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .tagline__text--center {
-    padding: 0 30px;
-  }
-
   .tagline__text {
     font-size: 40px;
     line-height: 48px;
+    margin: 0;
+    margin-top: 33px;
+  }
+
+  .tagline__text--center {
+    padding: 0 30px;
+    margin: 0;
   }
 }
 

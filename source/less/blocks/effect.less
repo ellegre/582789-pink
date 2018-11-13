@@ -26,13 +26,13 @@
 .effect__position-wrapper::before {
   position: absolute;
   content: "";
-  width: 166px;
-  height: 166px;
+  width: 173px;
+  height: 173px;
   border-radius: 50%;
   border: 12px solid @red;
   z-index: 3;
-  top: 111px;
-  left: -285px;
+  top: 112px;
+  left: -289px;
 }
 
 .effect__position-wrapper::after {
@@ -42,22 +42,27 @@
   height: 45px;
   color:@red;
   z-index: 4;
-  top: 186px;
+  top: 194px;
   font-size: 96px;
   font-weight: 700;
-  left: -254px;
+  left: -248px;
 }
 
 .effect__wrapper {
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
-  background-size: 34%;
-  background-position: 6% 57%;
+  background-size: 36%;
+  background-position: 5% 43%;
 }
 
 @media (min-width: @tablet-width) {
   .effect {
     display: block;
+  }
+
+  .effect__text {
+    width: 295px;
+    margin-bottom: 10px;
   }
 }
 

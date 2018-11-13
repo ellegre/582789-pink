@@ -84,22 +84,24 @@
         </div>
       <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filters__fieldset filters__fieldset--user-data container">
-          <p class="input">
-            <label class="input__label" for="user-surname">Фамилия:</label>
-            <input class="input__field" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
-          </p>
-          <p class="input">
-            <label class="input__label" for="user-name">Имя:</label>
-            <input class="input__field input__field--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
-          </p>
-          <p class="input">
-            <label class="input__label" for="user-middle-name">Отчество:</label>
-            <input class="input__field" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
-          </p>
+          <div class="container">
+            <p class="input">
+              <label class="input__label" for="user-surname">Фамилия:</label>
+              <input class="input__field" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
+            </p>
+            <p class="input">
+              <label class="input__label" for="user-name">Имя:</label>
+              <input class="input__field input__field--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
+            </p>
+            <p class="input">
+              <label class="input__label" for="user-middle-name">Отчество:</label>
+              <input class="input__field" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            </p>
+          </div>
         </fieldset>
         <fieldset class="filters__fieldset filters__fieldset--app">
           <div class="container">
-            <span class="filters__legend filters__legend--to-hide">С каким приложением путешествовали?</span>
+            <span class="filters__span filters__legend filters__legend--to-hide">С каким приложением путешествовали?</span>
             <p class="filters__app-text">С каким приложением путешествовали?</p>
             <ul class="filters__list filters__list--radio">
               <li class="filters__item">
@@ -138,7 +140,7 @@
         </fieldset>
         <fieldset class="filters__fieldset filters__fieldset--achievement">
           <div class="container">
-            <span class="filters__legend filters__legend--to-hide">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</span>
+            <span class="filters__span filters__legend filters__legend--to-hide">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</span>
             <p class="filters__app-text">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</p>
             <ul class="filters__list filters__list--achievement">
               <li class="filters__item">
@@ -180,14 +182,14 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="filters__fieldset container filters__fieldset--emotions">
+        <fieldset class="filters__fieldset filters__fieldset--emotions container">
           <legend class="filters__legend">Опишите свои эмоции</legend>
           <p class="input">
             <label class="input__label" for="user-text"></label>
             <textarea class="input__textarea" id="user-text" name="user-data-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </fieldset>
-        <div class="filters__send-form">
+        <div class="filters__send-form container">
           <button class="filters__button button" type="button">Отправить форму</button>
           <p class="filters__footnote"><sup class="filter__sup">*</sup> &#8211; Обязательные <span class="filters__send-form--to-hide">для заполнения</span> поля</p>
         </div>

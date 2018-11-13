@@ -15,7 +15,7 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li>
+              <li class="site-list__item">
                 <a class="page-header__logo site-list__link" href="index.html">
                   <svg class="page-header__logo-mobile" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                     <g>
@@ -75,6 +75,7 @@
       </div>
       <div class="promo">
         <div class="promo__wrapper">
+          <p class="promo__title">Взгляните на жизнь иначе!</p>
           <a href="https://itunes.apple.com" class="promo__link">Скачать приложение</a>
           <ul class="promo__list">
             <li class="promo__item"><a class="promo__list-link promo__list-link--apple" href="https://www.apple.com" class="apple">Эппл</a></li>
@@ -117,7 +118,7 @@
       <section class="effect">
         <div class="effect__wrapper container">
           <div class="effect__position-wrapper">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <h2 class="effect__title">Эффект<br> на 24 часа!</h2>
             <p class="effect__text">Британские ученые провели исследования и доказали,
     что положительный&#160;эффект от&#160;использования приложения длится целые сутки!</p>
             <a class="effect__link" href="#">Узнать больше об исследовании</a>
@@ -129,9 +130,11 @@
           <h2 class="visually-hidden">Отзывы</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
-              <p class="reviews__age">25 лет, водитель трамвая</p>
-              <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <div class="reviews__position-container">
+                <h3 class="reviews__title">Николай Петров</h3>
+                <p class="reviews__age">25 лет, водитель трамвая</p>
+                <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
             </li>
             <li class="reviews__item slider__item">
               <h3 class="reviews__title">Николай Иванов</h3>
@@ -165,7 +168,7 @@
         </div>
       </section>
       <section class="rates">
-        <div class="rates__wrapper container">
+        <div class="rates__wrapper">
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="rates__table">
             <tr class="rates__slider-item">
@@ -233,13 +236,13 @@
               <td class="rates__field">
                 <div class="rates__field-container">
                   <div class="rates__field-to-hide">Комментарии</div>
-                  <div class="rates__cross"></div>
+                  <div class="rates__check-mark"></div>
                 </div>
               </td>
             </tr>
           </table>
           <p class="rates__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
@@ -252,11 +255,11 @@
           <div class="contacts__wrapper-data">
             <div class="contacts__wrapper-text">
               <p class="contacts__text">Звоните:</p>
-              <a class="contacts__data">+ (812)555-66-66</p>
+              <a href="tel: +78125556666" class="contacts__data">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts__wrapper-text">
               <p class="contacts__text">Пишите:</p>
-              <p class="contacts__data">mail@htmlacademy.ru</p>
+              <a href="mailto: mail@htmlacademy.ru" class="contacts__data">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts__wrapper-text">
               <p class="contacts__text">Приезжайте в гости</p>
@@ -266,7 +269,7 @@
         </div>
       </section>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.8025504860293!2d30.320321682850754!3d59.93693004319571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1540283057468" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.8025504860293!2d30.320321682850754!3d59.93693004319571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1540283057468" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </main>
     <footer class="page-footer page-footer--none">

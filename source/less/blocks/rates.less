@@ -24,7 +24,6 @@
 
 .rates__wrapper {
   padding-top: 65px;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -33,22 +32,18 @@
   border-color: @table-border;
   border-spacing: 0;
   border-collapse: collapse;
+  transform: translateX(-196px);
 }
 
 .rates__value {
-	margin-top: 20px;
-  width: 150px;
-	margin-bottom: 13px;
-  padding: 15px 35px;
+  padding: 18px 35px;
 	background-color: @dark-blue;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 30px;
 	font-weight: 700;
   color: @white;
   text-transform: uppercase;
   border: 2px solid @table-border;
-
-
 }
 
 .rates__value:first-child {
@@ -63,17 +58,35 @@
 .rates__value--hit::before {
   position: absolute;
   content: "";
-  width: 61px;
-  height: 61px;
+  width: 74px;
+  height: 74px;
   top: 0px;
   left: 0px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
 }
 
+.rates__value--hit::after {
+  position: absolute;
+  content: "хит";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: @white;
+  width: 30px;
+  height: 20px;
+  top: 5px;
+  left: 0px;
+  z-index: 3;
+  transform: rotate(-45deg);
+}
+
 .rates__field-container {
   display: flex;
   justify-content: space-between;
+  width: 185px;
 }
 
 .rates__check-mark {
@@ -103,17 +116,19 @@
 
 .rates__field {
 	line-height: 30px;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   background-color: @white;
   width: 155px;
-  padding: 20px 18px;
+  padding: 8px 30px;
+  padding-right: 20px;
   border: 2px solid @table-border;
   white-space: nowrap;
 }
 
 .rates__field:first-child {
   text-align: left;
+  padding-left: 18px;
 }
 
 .rates__first-column {
@@ -138,21 +153,29 @@
     height: 100px;
   }
 
+  .rates {
+    padding-top: 43px;
+  }
+
   .rates__field-container {
     justify-content: center;
+    width: 101px;
   }
 
   .rates__field{
     text-transform: none;
+    padding: 2px 22px;
   }
 
   .rates__wrapper {
-    width: 620px;
     overflow: visible;
+    margin: 0 auto;
+    width: 620px;
   }
 
   .rates__first-column {
     display:  table-cell;
+    width: 150px;
   }
 
   .rates__field-to-hide {
@@ -161,10 +184,19 @@
 
   .rates__table {
     text-align: center;
+    transform: none;
   }
 
   .rates__toggles {
     display: none;
+  }
+
+  .rates__price {
+    font-size: 18px;
+  }
+
+  .rates__value {
+    padding: 10px 30px;
   }
 }
 
@@ -176,4 +208,13 @@
   .rates::after {
     height: 115px;
   }
+
+  .rates__field {
+    font-size: 14px;
+  }
+
+  .rates__price {
+    font-size: 24px;
+  }
+
 }

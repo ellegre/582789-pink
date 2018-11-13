@@ -15,8 +15,8 @@
 
 .contacts__text {
 	margin-bottom: 10px;
-	line-height: auto;
 	font-weight: 700;
+  font-size: 18px;
 }
 
 .contacts__data {
@@ -35,22 +35,44 @@
 @media (min-width: @tablet-width) {
   .contacts__wrapper-data {
     .flex;
-    justify-content: center;
   }
 
   .contacts__wrapper-text:first-child {
-    margin-right: 55px;
+    margin-left: 46px;
   }
 
   .contacts__wrapper-text:nth-child(2){
-    margin-left: 55px;
+    margin-left: 97px;
+  }
+
+  .contacts__wrapper-text:nth-child(3){
+    margin-top: 25px;
+    width: 225px;
+    margin-left: 201px;
+  }
+
+  .contacts__wrapper-text:nth-child(3) .contacts__text {
+    margin-top: 15px;
+    margin-bottom: -15px;
   }
 
   .contacts__title {
     padding: 0 113px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 21px;
+  }
+
+  .contacts__text {
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
+
+  .contacts {
+    padding-top: 42px;
+    padding-bottom: 0;
   }
 }
-
 @media (min-width: @desktop-width) {
   .contacts__title {
     font-size: 50px;
