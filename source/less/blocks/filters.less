@@ -144,9 +144,74 @@
 
   .filters__form {
   .flex;
-}
+  }
+
+  .filters__fieldset .container {
+    border: 2px solid @table-border;
+    width: 620px;
+    padding: 0;
+    padding-bottom: 17px;
+  }
+
+  .filters__fieldset--user-data {
+    padding-top: 0px;
+    margin-bottom: 19px;
+    border: none;
+    order: 1;
+  }
+
+  .filters__fieldset--user-data p {
+    margin-bottom: 47px;
+  }
+
+  .filters__fieldset--user-data p:last-child {
+    margin-bottom: 10px;
+  }
+
   .filters__fieldset--user-data .input__field {
     width: 523px;
+  }
+
+  .filters__span {
+    width: 323px;
+    background-color: @white;
+    padding-left: 21px;
+    margin-bottom: 48px;
+  }
+
+  .filters__fieldset--app {
+    padding-top: 32px;
+    padding-bottom: 4px;
+    margin-bottom: 53px;
+    order: 2;
+    background-color: @white;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .filters__container-3 {
+    order: 3;
+  }
+
+  .filters__container-5 {
+    order: 5;
+  }
+
+  .filters__container-6 {
+    order: 6;
+  }
+
+  .filters__list--radio {
+    margin-left: 44px;
+  }
+
+  .filters__fieldset--app .filters__span {
+    margin-bottom: 48px;
+  }
+
+  .filters__legend--to-hide {
+    display: block;
+    margin-bottom: 29px;
   }
 
   .input--upside .input__field {
@@ -157,73 +222,54 @@
     display: none;
   }
 
+
+  .filters__fieldset--user-contacts {
+    border: 2px solid @table-border;
+  }
+
+  .filters__fieldset--user-contacts {
+    margin-bottom: 19px;
+    margin-top: 0;
+    padding-top: 7px;
+    padding-bottom: 0;
+    order: 3;
+  }
+
+  .filters__fieldset--achievement {
+    order: 4;
+    background-color: @white;
+    padding-top: 41px;
+    margin-bottom: 53px;
+  }
+
+  .filters__fieldset--achievement .filters__span {
+    width: 360px;
+    padding: 0 15px;
+  }
+
+  .filters__fieldset--achievement .container {
+    padding-bottom: 0px;
+  }
+
   .filters__list--achievement {
     padding: 0;
-    margin-left: 15px;
+    margin-left: 61px;
   }
 
-  .filters__fieldset--user-data p {
-    margin-bottom: 19px;
+  .filters__fieldset--emotions {
+    margin-bottom: 39px;
+    order: 5;
+    padding: 0;
+    padding-bottom: 43px;
+    border: 2px solid @table-border;
   }
 
-  .filters__list--radio {
-    margin-left: 0;
+  .filters__fieldset--emotions legend {
+    margin-bottom: 39px;
   }
 
   .filters__send-form {
     justify-content: center;
-  }
-
-  .filters__fieldset--emotions {
-    padding: 0;
-  }
-
-
-  .filters__text-user-data {
-    margin-bottom: 0;
-  }
-
-  .input__label {
-    margin-left: 20px;
-    margin-bottom: 23px;
-  }
-
-  .filters__fieldset--user-data {
-    margin-bottom: 43px;
-    width: 0;
-    order: 1;
-  }
-
-  .filters__fieldset--achievement {
-    order: 2;
-  }
-
-  .filters__fieldset--user-contacts {
-    margin-bottom: 25px;
-    margin-top: 0;
-    padding-top: 7px;
-    order: 3;
-  }
-
-  .filters__fieldset--app {
-    padding-top: 37px;
-    padding-bottom: 4px;
-    margin-bottom: 45px;
-    order: 4;
-  }
-
-  .filters__fieldset--emotions {
-
-    margin-bottom: 39px;
-    order: 5;
-  }
-
-  .filters__fieldset--emotions legend {
-    margin-bottom: -9px;
-  }
-
-  .filters__send-form {
-
   }
 
   .filters__button {
@@ -234,11 +280,7 @@
     margin-bottom: -26px;
   }
 
-  .filters__fieldset {
-    padding-top: 49px;
-    margin-bottom: 65px;
-    border: 2px solid @table-border;
-  }
+
 }
 
 

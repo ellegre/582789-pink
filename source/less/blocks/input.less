@@ -1,5 +1,5 @@
 .input {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -48,95 +48,6 @@
   margin-bottom: 17px;
 }
 
-.input--upside .input__field {
-  order: 2;
-}
-.input--upside .input__label {
-  order: 1;
-}
-
-.input--tel::after {
-  display: none;
-}
-.input--letter::after {
-  display: none;
-}
-
-
-.input--upside .input__field {
-  width: 280px;
-}
-
-.filters__fieldset--user-data .input__field--long {
-  width: 280px;
-}
-
-.filters__fieldset--user-contacts .input__label {
-  margin-left: 23px;
-}
-
-.input__textarea {
-  min-height: 200px;
-  width: 100%;
-}
-
-
-
-@media (min-width: @tablet-width) {
-.input--upside .input__field {
-  width: 500px;
-}
-
-.input--tel::after {
-  right: 2px;
-}
-
-.input--letter::after {
-  right: 2px;
-}
-
-.filters__fieldset--user-data .input__field--long {
-  width: 563px;
-}
-
-.input--letter {
-  margin-left: 0;
-}
-
-.input--tel::after,
-.input--letter::after {
-  right: -123px;
-}
-
-.input--upside {
-  margin-bottom: 20px;
-}
-
-.input__textarea {
-  min-height: 195px;
-}
-}
-
-@media (min-width: @desktop-width) {
-.input {
-  margin: 0;
-}
-
-.input--tel {
-  position: relative;
-}
-
-.input--letter {
-  position: relative;
-  margin-left: 70px;
-}
-
-
-.input--upside {
-  position: relative;
-  width: 375px;
-}
-
 .input--upside::after {
   position: absolute;
   content: "";
@@ -164,6 +75,127 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+.input--upside::after {
+  display: none;
+}
+.input--letter::after {
+  display: none;
+}
+
+.input--upside .input__field {
+  width: 280px;
+}
+
+.filters__fieldset--user-data .input__field--long {
+  width: 280px;
+}
+
+.filters__fieldset--user-contacts .input__label {
+  margin-left: 23px;
+}
+
+.input__textarea {
+  min-height: 200px;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+.input--upside {
+  width: 527px;
+  margin-bottom: 11px;
+  margin-left: 45px;
+  position: relative;
+}
+
+.input__label {
+  margin-left: 20px;
+  margin-bottom: 23px;
+}
+
+.input--upside .input__field {
+  width: 500px;
+}
+
+.input--tel::after {
+  right: 2px;
+}
+
+.input--letter::after {
+  right: 2px;
+}
+
+.filters__fieldset--user-data .input__field--long {
+  width: 563px;
+}
+
+.filters__fieldset--user-data .input__label {
+  margin-left: 0;
+  margin-right: 17px;
+}
+
+.filters__fieldset--user-contacts .input__label {
+  margin-left: 19px;
+}
+
+.filters__fieldset--user-contacts .input__field {
+  margin-bottom: 13px;
+}
+
+.input--upside .input__field {
+  order: 1;
+  margin-bottom: 13px;
+}
+
+.input--upside .input__label {
+  order: 2;
+}
+
+.input--letter {
+  position: relative;
+}
+
+.input--tel::after {
+  display: block;
+}
+
+.input--letter::after {
+  display: block;
+}
+
+.input--tel::after,
+.input--letter::after {
+  right: -12px;
+}
+
+.input__textarea {
+  min-height: 195px;
+  width: 501px;
+  margin-left: 15px;
+  padding-top: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.input {
+  margin: 0;
+}
+
+.input--tel {
+  position: relative;
+}
+
+.input--letter {
+  position: relative;
+  margin-left: 70px;
+}
+
+
+.input--upside {
+  position: relative;
+  width: 375px;
+}
+
 
 .input--upside .input__field {
   padding-right: 60px;
