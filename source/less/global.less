@@ -1,4 +1,5 @@
 body {
+  min-width: 320px;
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", Arial, sans-serif;
@@ -37,38 +38,24 @@ input[type="radio"].visually-hidden {
 
 .container {
   width: 320px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
   box-sizing: border-box;
-  position: relative;
-  z-index: 2;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .container {
     width: 660px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .container {
-    width: 940px;
-    padding: 0;
+    width: 960px;
+    padding: 10px;
   }
 }
 
-@media (max-width: @desktop-width) {
-  .container {
-    width: 660px;
-  }
-}
 
-@media (max-width: @tablet-width) {
-  .container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-  }
-}

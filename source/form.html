@@ -81,67 +81,25 @@
     <main class="form-main">
       <div class="form-main__story container">
           <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="form-main__story--to-hide">Пожалуйста, заполните форму ниже:</span></p>
-        </div>
+      </div>
       <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filters__fieldset filters__fieldset--user-data container">
-          <div class="container">
-            <p class="input">
-              <label class="input__label" for="user-surname">Фамилия:</label>
-              <input class="input__field" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
-            </p>
-            <p class="input">
-              <label class="input__label" for="user-name">Имя:</label>
-              <input class="input__field input__field--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
-            </p>
-            <p class="input">
-              <label class="input__label" for="user-middle-name">Отчество:</label>
-              <input class="input__field" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="filters__fieldset filters__fieldset--app">
-          <div class="container">
-            <span class="filters__span filters__legend filters__legend--to-hide">С каким приложением путешествовали?</span>
-            <p class="filters__app-text">С каким приложением путешествовали?</p>
-            <ul class="filters__list filters__list--radio">
-              <li class="filters__item">
-                <div class="radio">
-                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-ios" checked>
-                  <label class="radio__label" for="filters-ios">Pink для iOS</label>
-                </div>
-              </li>
-              <li class="filters__item">
-                <div class="radio">
-                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-android">
-                  <label class="radio__label" for="filters-android">Pink на Android</label>
-                </div>
-              </li>
-              <li class="filters__item">
-                <div class="radio">
-                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-windows">
-                  <label class="radio__label" for="filters-windows">Windows Phone</label>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="filters__fieldset filters__fieldset--user-contacts container">
-          <legend class="filters__legend filters__legend--to-hide">Контактная информация</legend>
-          <div class="filters__user-container">
-            <p class="input input--upside input--tel">
-              <input class="input__field" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
-              <label class="input__label" for="user-tel">Номер телефона</label>
-            </p>
-            <p class="input input--upside input--letter">
-              <input class="input__field" id="user-email" type="email" name="email" placeholder="Введите почту *">
-              <label class="input__label" for="user-email">Адрес почты</label>
-            </p>
-          </div>
+          <p class="input">
+            <label class="input__label" for="user-surname">Фамилия:</label>
+            <input class="input__field" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
+          </p>
+          <p class="input">
+            <label class="input__label" for="user-name">Имя:</label>
+            <input class="input__field input__field--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
+          </p>
+          <p class="input">
+            <label class="input__label" for="user-middle-name">Отчество:</label>
+            <input class="input__field" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+          </p>
         </fieldset>
         <fieldset class="filters__fieldset filters__fieldset--achievement">
           <div class="container">
-            <span class="filters__span filters__legend filters__legend--to-hide">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</span>
-            <p class="filters__app-text">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</p>
+            <span class="filters__span filters__legend">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</span>
             <ul class="filters__list filters__list--achievement">
               <li class="filters__item">
                 <div class="checkbox">
@@ -182,6 +140,44 @@
             </ul>
           </div>
         </fieldset>
+        <fieldset class="filters__fieldset filters__fieldset--user-contacts container">
+          <legend class="filters__legend filters__legend--to-hide">Контактная информация</legend>
+          <div class="filters__user-container">
+            <p class="input input--upside input--tel">
+              <input class="input__field" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <label class="input__label" for="user-tel">Номер телефона</label>
+            </p>
+            <p class="input input--upside input--letter">
+              <input class="input__field" id="user-email" type="email" name="email" placeholder="Введите почту *">
+              <label class="input__label" for="user-email">Адрес почты</label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset class="filters__fieldset filters__fieldset--app">
+          <div class="container">
+            <span class="filters__span filters__legend">С каким приложением путешествовали?</span>
+            <ul class="filters__list filters__list--radio">
+              <li class="filters__item">
+                <div class="radio">
+                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-ios" checked>
+                  <label class="radio__label" for="filters-ios">Pink для iOS</label>
+                </div>
+              </li>
+              <li class="filters__item">
+                <div class="radio">
+                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-android">
+                  <label class="radio__label" for="filters-android">Pink на Android</label>
+                </div>
+              </li>
+              <li class="filters__item">
+                <div class="radio">
+                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-windows">
+                  <label class="radio__label" for="filters-windows">Windows Phone</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
         <fieldset class="filters__fieldset filters__fieldset--emotions container">
           <legend class="filters__legend">Опишите свои эмоции</legend>
           <p class="input">
@@ -191,7 +187,7 @@
         </fieldset>
         <div class="filters__send-form container">
           <button class="filters__button button" type="button">Отправить форму</button>
-          <p class="filters__footnote"><sup class="filter__sup">*</sup> &#8211; Обязательные <span class="filters__send-form--to-hide">для заполнения</span> поля</p>
+          <p class="filters__footnote"><sup class="filter__sup">*</sup> &#8212; Обязательные <span class="filters__send-form--to-hide">для заполнения</span> поля</p>
         </div>
       </form>
     </main>

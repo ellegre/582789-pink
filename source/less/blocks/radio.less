@@ -14,8 +14,8 @@
 .radio__label::before {
   position: absolute;
   content: "";
-  top: 4px;
-  left: 17px;
+  top: 1px;
+  left: 7px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -39,9 +39,9 @@
   border: 2px solid @red;
 }
 
-@media (max-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .radio__label::before {
-    left: 0;
-    top: 1px;
+    left: 17;
+    top: 4px;
   }
 }
