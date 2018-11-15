@@ -15,7 +15,7 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li>
+              <li class="site-list__item">
                 <a class="page-header__logo site-list__link" href="index.html">
                   <svg class="page-header__logo-mobile" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                   <g>
@@ -82,56 +82,56 @@
       <div class="form-main__story container">
           <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="form-main__story--to-hide">Пожалуйста, заполните форму ниже:</span></p>
       </div>
-      <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
+      <form class="filters" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filters__fieldset filters__fieldset--user-data container">
-          <p class="input">
+          <p class="input input--user-data">
             <label class="input__label" for="user-surname">Фамилия:</label>
             <input class="input__field" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию *">
           </p>
-          <p class="input">
+          <p class="input input--user-data">
             <label class="input__label" for="user-name">Имя:</label>
-            <input class="input__field input__field--long" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
+            <input class="input__field" id="user-name" type="text" name="name" placeholder="Введите ваше имя *">
           </p>
-          <p class="input">
+          <p class="input input--user-data">
             <label class="input__label" for="user-middle-name">Отчество:</label>
             <input class="input__field" id="user-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
         <fieldset class="filters__fieldset filters__fieldset--achievement">
-          <div class="container">
+          <div class="container filters__container-for-color">
             <span class="filters__span filters__legend">Ваши&#160;безбашенные достижения&#160;в&#160;путешествии</span>
             <ul class="filters__list filters__list--achievement">
-              <li class="filters__item">
+              <li class="filters__item filters__item--shark">
                 <div class="checkbox">
                   <input class="visually-hidden checkbox__field" type="checkbox" name="selfie" id="filter-selfie" checked>
                   <label class="checkbox__label" for="filter-selfie">Сделал селфи с акулой</label>
                 </div>
               </li>
-              <li class="filters__item">
+              <li class="filters__item filters__item--beach">
                 <div class="checkbox">
                   <input class="visually-hidden checkbox__field" type="checkbox" name="beach" id="filter-beach" checked>
                   <label class="checkbox__label" for="filter-beach">Обгорел на пляже</label>
                 </div>
               </li>
-              <li class="filters__item">
+              <li class="filters__item filters__item--norris">
                 <div class="checkbox">
                   <input class="visually-hidden checkbox__field" type="checkbox" name="Norris" id="filter-Norris">
                   <label class="checkbox__label" for="filter-Norris">Видел Чака Норриса</label>
                 </div>
               </li>
-              <li class="filters__item">
+              <li class="filters__item filters__item--souvenirs">
                 <div class="checkbox">
                   <input class="visually-hidden checkbox__field" type="checkbox" name="souvenir" id="filter-souvenir">
                   <label class="checkbox__label" for="filter-souvenir">Накупил сувениров</label>
                 </div>
               </li>
-              <li class="filters__item">
+              <li class="filters__item filters__item--tower">
                 <div class="checkbox">
                   <input class="visually-hidden checkbox__field" type="checkbox" name="tower" id="filter-tower" checked>
                   <label class="checkbox__label" for="filter-tower">Удержал башню</label>
                 </div>
               </li>
-              <li class="filters__item">
+              <li class="filters__item filters__item--hotel">
                 <div class="checkbox">
                   <input class="visually-hidden checkbox__field" type="checkbox" name="hotel" id="filter-hotel">
                   <label class="checkbox__label" for="filter-hotel">Разгромил отель</label>
@@ -144,42 +144,44 @@
           <fieldset class="filters__fieldset filters__fieldset--user-contacts">
             <legend class="filters__legend filters__legend--to-hide">Контактная информация</legend>
             <div class="filters__user-container">
-              <p class="input input--upside input--tel">
+              <p class="input input--user-contacts input--tel">
                 <input class="input__field" id="user-tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
                 <label class="input__label" for="user-tel">Номер телефона</label>
               </p>
-              <p class="input input--upside input--letter">
+              <p class="input input--user-contacts input--letter">
                 <input class="input__field" id="user-email" type="email" name="email" placeholder="Введите почту *">
                 <label class="input__label" for="user-email">Адрес почты</label>
               </p>
             </div>
           </fieldset>
         </div>
-        <fieldset class="filters__fieldset filters__fieldset--app">
-          <div class="container">
-            <span class="filters__span filters__legend">С каким приложением путешествовали?</span>
-            <ul class="filters__list filters__list--radio">
-              <li class="filters__item">
-                <div class="radio">
-                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-ios" checked>
-                  <label class="radio__label" for="filters-ios">Pink для iOS</label>
-                </div>
-              </li>
-              <li class="filters__item">
-                <div class="radio">
-                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-android">
-                  <label class="radio__label" for="filters-android">Pink на Android</label>
-                </div>
-              </li>
-              <li class="filters__item">
-                <div class="radio">
-                  <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-windows">
-                  <label class="radio__label" for="filters-windows">Windows Phone</label>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
+        <div class="filters__wrapper-app">
+          <fieldset class="filters__fieldset filters__fieldset--app">
+            <div class="container filters__container-for-color">
+              <span class="filters__span filters__legend">С каким приложением путешествовали?</span>
+              <ul class="filters__list filters__list--radio">
+                <li class="filters__item">
+                  <div class="radio">
+                    <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-ios" checked>
+                    <label class="radio__label" for="filters-ios">Pink для iOS</label>
+                  </div>
+                </li>
+                <li class="filters__item">
+                  <div class="radio">
+                    <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-android">
+                    <label class="radio__label" for="filters-android">Pink на Android</label>
+                  </div>
+                </li>
+                <li class="filters__item">
+                  <div class="radio">
+                    <input class="visually-hidden radio__field" type="radio" name="radio" id="filters-windows">
+                    <label class="radio__label" for="filters-windows">Windows Phone</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
         <div class="container filters__container-5">
           <fieldset class="filters__fieldset filters__fieldset--emotions">
             <legend class="filters__legend">Опишите свои эмоции</legend>
