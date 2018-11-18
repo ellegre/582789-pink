@@ -4,7 +4,7 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 94px 435px, center 254px;
-  background-size: auto, auto 100%;
+  background-size: auto, 100% 320px;
 }
 
 .page-header__logo-mobile {
@@ -23,17 +23,26 @@
 }
 
 .page-header__title {
-  margin: 0;
+  margin: 0 auto;
   width: 240px;
-  padding-top: 25px;
-  padding-bottom: 54px;
   color: @white;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  margin: 0 auto;
   text-align: center;
 }
+
+.page-header__photos {
+    padding: 20px;
+    padding-top: 27px;
+}
+
+.page-header__contest {
+    padding: 20px;
+    padding-top: 27px;
+    padding-bottom: 48px;
+}
+
 
 .page-header--photo,
 .page-header--form {
@@ -70,9 +79,19 @@
   .page-header__title {
     font-size: 50px;
     line-height: 60px;
-    width: 475px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .page-header__photos {
+    padding: 20px;
     padding-top: 68px;
   }
+
+  .page-header__contest {
+    padding-top: 71px;
+    padding-bottom: 74px;
+}
 
   .page-header__logo-mobile {
     display: none;
@@ -86,14 +105,19 @@
     padding: 17px 27px;
   }
 
-
   .page-header--photo {
-  min-height: 696px;
-  background-image: url("../img/bg-back-tablet@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 249px;
-  background-size: auto 100%;
-  }
+    min-height: 696px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 249px;
+    background-size: auto 100%;
+    @media (min-resolution: @retina-dpi),
+            (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+      }
+    }
+
 
   .page-header--form {
   min-height: 696px;
@@ -138,10 +162,15 @@
     }
   }
 
-  .page-header__title {
-    width: 765px;
-    padding-top: 67px;
-    padding-bottom: 74px;
+  .page-header__photos {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+
+  .page-header__contest {
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-top: 64px;
   }
 
   .page-header--form {

@@ -9,7 +9,7 @@
   text-transform: uppercase;
   color: @red;
   margin-right: 19px;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .input__field {
@@ -92,25 +92,35 @@
   display: none;
 }
 
-.input--user-data .input__label {
-  margin-left: 23px;
-}
-
 .input__textarea {
   min-height: 200px;
   width: 100%;
 }
 
-
 .input--user-data .input__label {
   margin-left: 22px;
+}
+
+
+.input--user-data {
+  .flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.input--user-data .input__field {
+  flex-grow: 1;
+}
+
+.input--emotions {
+  margin-top: 15px;
 }
 
 @media (min-width: @tablet-width) {
 .input--user-contacts {
   display: flex;
   align-items: center;
-  margin-bottom: 11px;
+  margin-bottom: 3px;
   position: relative;
 }
 
@@ -121,7 +131,7 @@
 
 .input--user-data .input__label {
   margin-left: 0;
-  margin-right: 17px;
+  margin-right: 24px;
   margin-top: 20px;
 }
 
@@ -159,11 +169,29 @@
   min-height: 195px;
   padding-top: 13px;
   }
+
+  .input--user-data {
+    flex-wrap: nowrap;
+    margin-bottom: 44px;
+  }
+
+  .input--user-data:last-child {
+    margin-bottom: 5px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
-.input {
-  margin: 0;
+  .input {
+    margin: 0;
+}
+
+.input--user-data {
+  margin-bottom: 55px;
+}
+
+.input--user-data:last-child {
+  margin-bottom: 0px;
 }
 
 .input--tel {
@@ -196,6 +224,10 @@
 
   .input__textarea {
     min-height: 128px;
+  }
+
+  .input--user-data {
+    margin-bottom: 44px;
   }
 }
 
