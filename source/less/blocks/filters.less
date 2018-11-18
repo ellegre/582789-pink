@@ -1,143 +1,161 @@
-  .filters__list {
+.filters__list {
   .list;
+  &--achievement {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 44px;
   }
-
-  .filters {
-    background-color: @white;
-    font-size: 18px;
-    line-height: 30px;
+  &--radio {
+    padding-right: 20px;
+    padding-top: 41px;
   }
+}
 
-  .filters__fieldset {
-    border: none;
-  }
+.filters {
+  background-color: @white;
+  font-size: 18px;
+  line-height: 30px;
+}
 
-  .filters__legend {
-    text-align: center;
-    font-size: 14px;
-    line-height: 18px;
-    color: @red;
-    text-transform: uppercase;
-    padding: 0 34px;
-  }
-
-  .filters__legend--emotions {
-    margin-bottom: -25px;
-  }
-
-  .filters__legend--to-hide{
-    display: none;
-  }
-
-  .filters__fieldset--user-data {
+.filters__fieldset {
+  border: none;
+  &--user-data {
     padding-top: 0;
     margin-bottom: 37px;
   }
-
-
-  .filters__fieldset--achievement {
+  &--achievement {
     background-color: @gray;
     margin-bottom: 12px;
     padding: 0;
     padding-top: 38px;
     width: 100%;
   }
-
-  .filters__list--achievement {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 44px;
-  }
-
-  .filters__list--radio {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 41px;
-  }
-
-  .filters__span {
-    display: block;
-  }
-
-  .filters__fieldset--user-contacts {
+  &--user-contacts {
     padding: 0;
     padding-top: 18px;
     margin-bottom: 27px;
   }
-
-  .filters__fieldset--app {
+  &--app {
     background-color: @gray;
     width: 100%;
     padding-top: 36px;
     padding-bottom: 5px;
     margin-bottom: 39px;
   }
-
-  .filters__list--radio {
-    margin-left: -38px;
-  }
-
-  .filters__fieldset--emotions {
+  &--emotions {
     padding: 0;
     padding-bottom: 14px;
     padding-top: 10px;
     margin-bottom: 30px;
   }
+}
 
-  .filters__send-form {
-    margin-bottom: 44px;
+.filters__legend {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: @red;
+  text-transform: uppercase;
+  padding: 0 34px;
+  &--emotions {
+    margin-bottom: -25px;
   }
-
-  .filters__button {
-    padding: 19px 10px;
-  }
-
-  .filters__send-form--to-hide {
+  &--to-hide{
     display: none;
   }
+}
 
-  .filters__button {
-    width: 279px;
-    padding: 16px 10px;
+.filters__span {
+  display: block;
+}
+
+.filters__send-form {
+  margin-bottom: 44px;
+  &--to-hide {
+    display: none;
+  }
+}
+
+.filters__button {
+  width: 279px;
+  padding: 16px 10px;
+  color: @white;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: @green;
+  border-radius: 5px;
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: @green-pale;
+  }
+
+  &:disabled {
     color: @white;
-    text-transform: uppercase;
-    line-height: 30px;
-    font-weight: 700;
-    background-color: @green;
-    border-radius: 5px;
-
-    &:hover,
-    &:focus {
-      background-color: @green-hover;
-      }
-
-      &:active {
-        color: @green-pale;
-      }
-
-      &:disabled {
-        color: @white;
-        background-color: @gray;
-      }
+    background-color: @gray;
   }
+}
 
-  .filters__footnote {
-    margin: 0;
-    margin-top: 31px;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.filters__footnote {
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  .filter__sup {
-    color: @red;
-  }
+.filter__sup {
+  color: @red;
+}
 
 @media (min-width: @tablet-width) {
   .filters {
-  .flex;
+    .flex;
+  }
+
+  .filters__fieldset {
+    &--user-data {
+      padding-top: 0px;
+      margin-bottom: 20px;
+      border: none;
+      order: 1;
+    }
+    &--app {
+      padding-top: 32px;
+      padding-bottom: 4px;
+      margin-bottom: 53px;
+      background-color: @white;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &--achievement {
+      order: 4;
+      background-color: @white;
+      padding-top: 45px;
+      margin-bottom: 53px;
+    }
+    &--user-contacts {
+      border: 2px solid @table-border;
+      padding: 0 54px;
+      margin-bottom: 19px;
+      margin-top: 0;
+      padding-top: 7px;
+      padding-bottom: 0;
+      order: 3;
+    }
+    &--emotions {
+      margin-bottom: 65px;
+      order: 5;
+      padding: 0 57px;
+      padding-bottom: 43px;
+      border: 2px solid @table-border;
+    }
   }
 
   .filters__container-for-color {
@@ -151,28 +169,11 @@
     padding-bottom: 0px;
   }
 
-  .filters__fieldset--user-data {
-    padding-top: 0px;
-    margin-bottom: 20px;
-    border: none;
-    order: 1;
-  }
-
-
   .filters__span {
     margin-bottom: 48px;
     width: 335px;
     margin: 0 auto;
     background-color: @white;
-  }
-
-  .filters__fieldset--app {
-    padding-top: 32px;
-    padding-bottom: 4px;
-    margin-bottom: 53px;
-    background-color: @white;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .filters__wrapper-app {
@@ -192,9 +193,11 @@
     order: 6;
   }
 
-  .filters__list--radio {
-    margin-left: 25px;
-    padding-top: 49px;
+  .filters__list {
+    &--radio {
+      margin-left: 25px;
+      padding-top: 49px;
+    }
   }
 
   .filters__fieldset--app .filters__span {
@@ -206,27 +209,8 @@
     margin-bottom: 29px;
   }
 
-
   .filters__to-hide {
     display: none;
-  }
-
-
-  .filters__fieldset--user-contacts {
-    border: 2px solid @table-border;
-    padding: 0 54px;
-    margin-bottom: 19px;
-    margin-top: 0;
-    padding-top: 7px;
-    padding-bottom: 0;
-    order: 3;
-  }
-
-  .filters__fieldset--achievement {
-    order: 4;
-    background-color: @white;
-    padding-top: 45px;
-    margin-bottom: 53px;
   }
 
   .filters__fieldset--achievement .filters__span {
@@ -234,19 +218,13 @@
     width: 360px;
   }
 
-  .filters__list--achievement {
-    padding: 30px;
-    padding-left: 62px;
-    padding-top: 50px;
-    padding-bottom: 0;
-  }
-
-  .filters__fieldset--emotions {
-    margin-bottom: 65px;
-    order: 5;
-    padding: 0 57px;
-    padding-bottom: 43px;
-    border: 2px solid @table-border;
+  .filters__list {
+    &--achievement {
+      padding: 30px;
+      padding-left: 62px;
+      padding-top: 50px;
+      padding-bottom: 0;
+    }
   }
 
   .filters__fieldset--emotions .filters__legend  {
@@ -279,9 +257,18 @@
     margin-right: auto;
   }
 
-  .filters__list--radio {
-    padding-left: 57px;
-    margin-left: 0;
+  .filters__list {
+    &--radio {
+      padding-left: 57px;
+      margin-left: 0;
+    }
+    &--achievement {
+      .flex;
+      padding: 0 60px;
+      justify-content: space-between;
+      margin-left: 0;
+      padding-top: 47px;
+    }
   }
 
   .filters__fieldset--user-contacts {
@@ -295,23 +282,43 @@
      margin-bottom: 0;
    }
 
-  .filters__list--achievement {
-    .flex;
-    padding: 0 60px;
-    justify-content: space-between;
-  }
-
   .filters__send-form {
     .flex;
     order: 6;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0px;
+    &--to-hide {
+      display: inline-block;
+    }
   }
 
-  .filters__fieldset--app {
-    padding-bottom: 18px;
-    padding-top: 3px;
-    margin-bottom: 0;
+  .filters__fieldset {
+    &--app {
+      padding-bottom: 18px;
+      padding-top: 3px;
+      margin-bottom: 0;
+    }
+    &--emotions {
+      padding: 0px 60px;
+      padding-bottom: 30px;
+      padding-top: 6px;
+      margin-top: -10px;
+      margin-bottom: 69px;
+    }
+    &--user-data {
+      width: 443px;
+      margin: 0;
+      padding: 0;
+      padding-top: 14px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+    }
+    &--achievement {
+      padding: 0;
+      padding-top: 12px;
+      margin-bottom: 72px;
+    }
   }
 
   .filters__fieldset--app .filters__span {
@@ -321,22 +328,8 @@
   .filters__user-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 60px;
-  }
-
-  .filters__fieldset--emotions {
-    padding: 0px 60px;
-    padding-bottom: 30px;
-    padding-top: 6px;
-    margin-top: -10px;
-    margin-bottom: 69px;
-
-  }
-
-  .filters__send-form {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
+    padding: 0;
+    width: 820px;
   }
 
   .filters__footnote {
@@ -347,21 +340,11 @@
     display: none;
   }
 
-  .filters__fieldset--user-data {
-    width: 443px;
-    margin: 0;
-    padding: 0;
-    padding-top: 14px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-  }
-
   .filters__fieldset--app .filters__container-for-color {
     width: 431px;
     margin: 0;
     padding-bottom: 23px;
   }
-
 
   .filters__wrapper-app {
     margin: 0;
@@ -370,64 +353,42 @@
     padding-top: 10px;
   }
 
-  .filters__user-container {
-    padding: 0;
-    width: 820px;
-  }
-
-  .filters__fieldset--achievement {
-    padding: 0;
-    padding-top: 12px;
-    margin-bottom: 72px;
-  }
-
   .filters__fieldset--achievement .filters__container-for-color {
     width: 940px;
   }
 
-  .filters__list--achievement {
-    margin-left: 0;
-    padding-top: 47px;
+  .filters__list {
+    &--achievement {
+      margin-left: 0;
+      padding-top: 47px;
+      display: flex;
+    }
   }
 
   .filters__item {
     width: 207px;
-  }
-
-  .filters__list--achievement {
-    display: flex;
-  }
-
-  .filters__item--shark {
-    order: 1;
-  }
-
-  .filters__item--norris {
-    order: 2;
-  }
-
-  .filters__item--tower {
-    order: 3;
-  }
-
-  .filters__item--beach {
-    order: 4;
-  }
-
-  .filters__item--souvenirs {
-    order: 5;
-  }
-
-  .filters__item--hotel {
-    order: 6;
+    &--shark {
+      order: 1;
+    }
+    &--norris {
+      order: 2;
+    }
+    &--tower {
+      order: 3;
+    }
+    &--beach {
+      order: 4;
+    }
+    &--souvenirs {
+      order: 5;
+    }
+    &--hotel {
+      order: 6;
+    }
   }
 
   .filters__fieldset--emotions .filters__legend {
     margin-bottom: -3px;
-  }
-
-  .filters__send-form--to-hide {
-    display: inline-block;
   }
 
   .page-footer__wrapper {

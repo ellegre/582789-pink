@@ -1,7 +1,3 @@
-
-.user-list {
-}
-
 .user-list__item {
 	background-color: @gray;
 	margin-bottom: 20px;
@@ -63,33 +59,31 @@
 }
 
 .user-list__span-wrapper{
- margin: 0;
+  margin: 0;
 }
-
 
 .user-list__content-container {
   position: relative;
-}
-
-.user-list__content-container::before {
-  position: absolute;
-  padding: 7px 3px;
-  content: "панорама дня";
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-  font-family: "Open Sans";
-  text-transform: uppercase;
-  color: @white;
-  width: 136px;
-  height: 23px;
-  text-align: center;
-  vertical-align: middle;
-  top: -140px;
-  right: 67px;
-  left: calc(100% - 140px);
-  z-index: 2;
-  background-color: @red;
+  &::before {
+    position: absolute;
+    padding: 7px 3px;
+    content: "панорама дня";
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: @white;
+    width: 136px;
+    height: 23px;
+    text-align: center;
+    vertical-align: middle;
+    top: -140px;
+    right: 67px;
+    left: calc(100% - 140px);
+    z-index: 2;
+    background-color: @red;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -105,6 +99,7 @@
   .user-list__content-container {
   padding: 25px 28px;
   padding-bottom: 5px;
+  margin-bottom: 20px;
   }
 
   .user-list__article {
@@ -112,15 +107,6 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-  }
-
-  .user-list__content-container {
-    margin-bottom: 20px;
-  }
-
-  .user-list__like-wrapper {
-    margin-top: auto;
-    position: relative;
   }
 
   .user-list__content-wrapper {
@@ -136,12 +122,30 @@
     position: absolute;
     top: 8px;
     left: 230px;
+    &--first {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 107px;
+    }
   }
 
   .user-list__content-container::before {
     top: -454px;
   }
 
+  .user-list__likes-wrapper {
+    position: absolute;
+    top: 22px;
+    right: 62px;
+    z-index: 3;
+  }
+
+  .user-list__content-container {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 47px;
+  }
 }
 
 @media (min-width: @desktop-width) {

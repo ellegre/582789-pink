@@ -3,23 +3,22 @@
   background-color: @white;
   position: relative;
   padding-bottom: 40px;
-}
-
-.reviews::before {
-  display: none;
-  position: absolute;
-  content: "";
-  width: 79px;
-  height: 64px;
-  top: 53px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 1;
-  background-image: url("../img/icon-quotes.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 0;
+  &::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 79px;
+    height: 64px;
+    top: 53px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+  }
 }
 
 .reviews__list {
@@ -43,7 +42,7 @@
   line-height: 30px;
 }
 
-.reviews-description {
+.reviews__description {
 	line-height: 30px;
 }
 
@@ -71,10 +70,6 @@
   cursor: pointer;
 }
 
-.reviews__next {
-	font-size: 0;
-}
-
 .reviews__toggles {
 	margin: 0;
 	padding-bottom: 40px;
@@ -82,25 +77,23 @@
 
 .reviews__label {
   position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0;
+    background-color: @toggle;
+    border: none;
+    padding: 0;
+    margin-right: 5px;
+    z-index: 2;
+    top: 10px;
+    left: 2px;
+  }
 }
-
-.reviews__label::before {
-  position: absolute;
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 0;
-  background-color: @toggle;
-  border: none;
-  padding: 0;
-  margin-right: 5px;
-  z-index: 2;
-  top: 10px;
-  left: 2px;
-}
-
 
 @media (min-width: @tablet-width) {
   .reviews__position-container {
@@ -108,7 +101,7 @@
     flex-direction: column;
   }
 
-  .reviews-description {
+  .reviews__description {
     order: 1;
     font-size: 18px;
     margin-bottom: 33px;
@@ -145,11 +138,10 @@
     display: block;
   }
 
-  .reviews::before {
-    display: block;
-  }
-
   .reviews {
       padding-top: 120px;
+      &::before {
+      display: block;
+    }
   }
 }
