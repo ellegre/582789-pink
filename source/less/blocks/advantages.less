@@ -21,8 +21,6 @@
 }
 
 .advantages__text {
-	margin-top: 45px;
-	margin-bottom: 45px;
 	font-size: 24px;
 	line-height: auto;
 	font-weight: 300;
@@ -31,6 +29,7 @@
 .advantages__list {
 	.list;
 	text-align: center;
+  padding-top: 11px;
 }
 
 .advantages__list-container {
@@ -38,7 +37,7 @@
 }
 
 .advantages__title {
-	margin-bottom: 11px;
+  margin: 0;
 	font-weight: 700;
   font-size: 18px;
 	color: @black;
@@ -46,11 +45,14 @@
 
 .advantages__description {
   margin: 0;
-  width: 267px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .advantages__item {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .advantages__item:last-child {
@@ -58,14 +60,14 @@
 }
 
 .advantages__item:nth-child(3) {
-  padding-bottom: 319px;
+  padding-bottom: 299px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 147%;
   @media (min-resolution: @retina-dpi),
           (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
-    background-size: 162px auto;
+    background-size: 157px auto;
     }
 }
 
@@ -89,7 +91,7 @@
     @media (min-resolution: @retina-dpi),
           (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-screen-3-tablet@2x.png");
-    background-size: 271px auto;
+    background-size: 268px auto;
     }
   }
 
@@ -155,7 +157,7 @@
     @media (min-resolution: @retina-dpi),
           (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-screen-1-desktop@2x.png");
-    background-size: 280px auto;
+    background-size: 292px auto;
     }
   }
 
@@ -166,7 +168,7 @@
     @media (min-resolution: @retina-dpi),
           (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-screen-2-desktop@2x.png");
-    background-size: 280px auto;
+    background-size: 292px auto;
     }
   }
 
@@ -177,7 +179,7 @@
     @media (min-resolution: @retina-dpi),
           (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-screen-3-desktop@2x.png");
-    background-size: 280px auto;
+    background-size: 292px auto;
     }
   }
 }

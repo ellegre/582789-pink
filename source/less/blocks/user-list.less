@@ -32,10 +32,6 @@
 	color: @red;
 }
 
-.user-list__author-image {
-	background-size: cover;
-}
-
 .user-list__content-container {
   padding: 16px 17px;
   background-color: @gray;
@@ -78,7 +74,7 @@
     height: 23px;
     text-align: center;
     vertical-align: middle;
-    top: -140px;
+    top: -179px;
     right: 67px;
     left: calc(100% - 140px);
     z-index: 2;
@@ -97,9 +93,9 @@
   }
 
   .user-list__content-container {
-  padding: 25px 28px;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+    padding: 25px 28px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
   }
 
   .user-list__article {
@@ -113,7 +109,6 @@
     padding: 19px 27px;
     padding-bottom: 23px;
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
     min-height: 107px;
   }
@@ -130,10 +125,6 @@
     }
   }
 
-  .user-list__content-container::before {
-    top: -454px;
-  }
-
   .user-list__likes-wrapper {
     position: absolute;
     top: 22px;
@@ -141,10 +132,18 @@
     z-index: 3;
   }
 
+  .user-list__like-wrapper {
+    position: relative;
+    margin-top: auto;
+  }
+
   .user-list__content-container {
     position: relative;
     padding-bottom: 15px;
     margin-bottom: 47px;
+    &::before {
+      top: -454px;
+    }
   }
 }
 

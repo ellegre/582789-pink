@@ -84,8 +84,13 @@
           Видите,&#160;как&#160;не&#160;хватает&#160;ваших?</p>
         </div>
         <article class="photo-main__article">
-          <div class="photo-main__article-container">
-          </div>
+          <a>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+              <img class="user-list__author-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Изображение">
+            </picture>
+          </a>
           <div class="photo-main__article-wrapper container">
             <div class="user-list__content-container">
               <span class="user-list__author-name">Анна</span><span class="user-list__author-time">(5 минут назад)</span>
@@ -285,7 +290,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer page__footer--form">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper page-footer__wrapper--photo container">
         <a href="index.html" class="page-footer__logo">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
