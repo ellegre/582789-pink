@@ -130,16 +130,42 @@
 @media (min-width: @desktop-width) {
   .reviews__prev {
     display: block;
+    top: 213px;
+    left: -122px;
   }
 
   .reviews__next {
     display: block;
+    top: 210px;
+    right: -122px;
   }
 
   .reviews {
-      padding-top: 120px;
       &::before {
       display: block;
+      top: 77px;
     }
+  }
+
+  .reviews__list {
+    padding: 0;
+  }
+
+  .reviews__wrapper {
+    padding-top: 170px;
+    width: 720px;
+  }
+
+  .reviews__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__age {
+    font-size: 18px;
+  }
+
+  .reviews__description {
+    padding-bottom: 38px;
   }
 }

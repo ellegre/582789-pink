@@ -78,10 +78,11 @@
 
   .effect__wrapper {
     padding: 40px;
+    padding-bottom: 113px;
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: 0 57%;
+    background-size: 32%;
+    background-position: 6px 22%;
     &::before {
       top: 82px;
       left: -312px;
@@ -89,8 +90,38 @@
       height: 180px;
       border: 14px solid @red;
     }
-    &::after {
-      top: 167px;
+  }
+
+  .effect__position-wrapper {
+    margin-left: 335px;
+    padding-top: 73px;
+    &::before {
+      width: 220px;
+      height: 220px;
+      border: 19px solid #d22856;
+      top: 51px;
+      left: -345px;
     }
+    &::after {
+      top: 161px;
+      font-size: 120px;
+      left: -284px;
+    }
+  }
+
+  .effect__span {
+    display: inline-block;
+  }
+
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    padding-top: 22px;
+    padding-bottom: 34px;
+  }
+
+  .effect__link {
+    font-size: 18px;
   }
 }

@@ -90,14 +90,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    padding-top: 66px;
+  }
+
   .contacts__title {
     font-size: 50px;
     line-height: 60px;
-    margin-bottom: 60px
+    margin-bottom: 53px
   }
 
   .contacts__wrapper-data {
     justify-content: space-between;
+    padding-top: 0;
   }
 
   .contacts__wrapper-text:first-child {
@@ -108,6 +113,14 @@
   }
   .contacts__wrapper-text:nth-child(3) {
     order: 2;
-    width: 220px;
+    margin-left: 101px;
+  }
+
+  .contacts__wrapper-text:nth-child(3) .contacts__text {
+    padding-top: 0;
+  }
+
+  .contacts__text {
+    margin-bottom: 17px;
   }
 }
