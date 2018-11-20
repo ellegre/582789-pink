@@ -164,6 +164,8 @@
     overflow: visible;
     margin: 0 auto;
     width: 620px;
+    padding-top: 66px;
+    padding-bottom: 67px;
   }
 
   .rates__first-column {
@@ -189,9 +191,12 @@
   }
 
   .rates__value {
-    padding: 10px 30px;
+    padding: 10px 37px;
     &--hit::before {
-     background-image: url("../img/bg-hit-tablet.svg");
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
+    &--hit::after {
+      top: 6px;
     }
   }
 }

@@ -16,11 +16,15 @@
   text-decoration: underline;
 }
 
+.effect__span {
+  display: block;
+}
+
 .effect__position-wrapper {
   position: relative;
   margin-left: 310px;
   text-align: left;
-  padding: 90px 0;
+  padding-top: 97px;
   &::before {
     position: absolute;
     content: "";
@@ -29,7 +33,7 @@
     border-radius: 50%;
     border: 12px solid @red;
     z-index: 3;
-    top: 112px;
+    top: 118px;
     left: -289px;
   }
   &::after {
@@ -39,10 +43,10 @@
     height: 45px;
     color:@red;
     z-index: 4;
-    top: 194px;
+    top: 200px;
     font-size: 96px;
     font-weight: 700;
-    left: -248px;
+    left: -245px;
   }
 }
 
@@ -50,7 +54,8 @@
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
   background-size: 36%;
-  background-position: 5% 43%;
+  background-position: 21px 58px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,7 +65,9 @@
 
   .effect__text {
     width: 295px;
-    margin-bottom: 10px;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 10px;
   }
 }
 
