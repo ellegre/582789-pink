@@ -145,14 +145,11 @@
               <p class="reviews-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <div class="reviews__controls slider__controls">
-            <input id="review-1" type="radio" name="reviews-toggle" class="visually-hidden slider__toggle ">
-            <input id="review-2" type="radio" name="reviews-toggle" class="visually-hidden slider__toggle">
-            <input id="review-3" type="radio" name="reviews-toggle" class="visually-hidden slider__toggle">
-            <label class="reviews__label" for="review-1"></label>
-            <label class="reviews__label" for="review-2"></label>
-            <label class="reviews__label" for="review-3"></label>
-          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
           <button class="reviews__prev slider__arrow slider__arrow--left">
             <svg class="reviews__arrow-path reviews__arrow-path--disabled" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
@@ -271,7 +268,7 @@
       </div>
     </main>
     <footer class="page-footer page-footer--none">
-      <div class="page-footer__wrapper container">
+      <div class="page-footer__wrapper page-footer__wrapper--index container">
         <a href="index.html" class="page-footer__logo">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
@@ -325,6 +322,26 @@
           navMain.classList.remove('main-nav--opened');
         }
       });
-    </script>
+
+      function initMap() {
+        var coordinates = {lat: 47.212325, lng: 38.933663},
+
+            map = new google.maps.Map(document.getElementByClassName('map'), {
+                center: coordinates
+            }),
+
+            marker = new google.maps.Marker({
+                position: coordinates,
+                map: map
+            });
+          }
+
+          image = 'img/icon-map-marker.svg',
+          marker = new google.maps.Marker({
+              position: coordinates,
+              map: map,
+              icon: image
+          });
+      </script>
   </body>
 </html>

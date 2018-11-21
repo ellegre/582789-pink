@@ -33,32 +33,9 @@
 }
 
 .user-list__content-container {
-  padding: 16px 17px;
+  padding: 14px 17px;
   background-color: @gray;
   margin-bottom: 20px;
-}
-
-.user-list__content-wrapper {
-  padding: 13px 17px;
-  padding-bottom: 16px;
-}
-
-.user-list__button {
-  border: none;
-  font-size: 0;
-  width: 20px;
-  height: 20px;
-  background-color: @gray;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-
-.user-list__span-wrapper{
-  margin: 0;
-}
-
-.user-list__content-container {
   position: relative;
   &::before {
     position: absolute;
@@ -80,6 +57,26 @@
     z-index: 2;
     background-color: @red;
   }
+}
+
+.user-list__content-wrapper {
+  padding: 13px 17px;
+  padding-bottom: 16px;
+}
+
+.user-list__button {
+  border: none;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: @gray;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.user-list__span-wrapper{
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -106,7 +103,7 @@
   }
 
   .user-list__content-wrapper {
-    padding: 19px 27px;
+    padding: 18px 27px;
     padding-bottom: 23px;
     display: flex;
     flex-direction: column;
@@ -118,17 +115,20 @@
     top: 8px;
     left: 230px;
     &--first {
-      position: absolute;
-      content: "";
-      top: 8px;
-      left: 107px;
+      position: static;
+      padding: 0;
+      margin: 0;
+      margin-left: 10px;
+      background-position: 106% 50%;
+      order: 3;
     }
   }
 
   .user-list__likes-wrapper {
+    display: flex;
     position: absolute;
-    top: 22px;
-    right: 62px;
+    top: 24px;
+    right: 30px;
     z-index: 3;
   }
 
@@ -140,23 +140,40 @@
   .user-list__content-container {
     position: relative;
     padding-bottom: 15px;
-    margin-bottom: 47px;
+    margin-bottom: 51px;
     &::before {
-      top: -433px;
+      top: -453px;
+    }
+  }
+
+  .user-list__author-image--first {
+    display: block;
+    height: 508px;
+    margin: 0 auto;
+  }
+
+  .user-list__likes-counter {
+    &--first {
+      margin-left: 10px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .user-list__likes-wrapper {
-    right: 20px;
+    right: 29px;
   }
 
   .user-list__content-container {
     padding: 24px 28px;
+    padding-bottom: 14px;
   }
 
   .user-list__item {
     margin-bottom: 55px;
+  }
+
+  .user-list__author-image--first {
+    height: 505px;
   }
 }

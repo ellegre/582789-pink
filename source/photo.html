@@ -89,16 +89,16 @@
             <picture>
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="user-list__author-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Изображение">
+              <img class="user-list__author-image user-list__author-image--first" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Изображение">
             </picture>
           </a>
           <div class="photo-main__article-wrapper container">
             <div class="user-list__content-container">
               <span class="user-list__author-name">Анна</span><span class="user-list__author-time">(5 минут назад)</span>
               <p class="user-list__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="user-list__likes-wrapper">
+              <div class="user-list__likes-wrapper user-list__likes-wrapper--first">
                 <button class="user-list__button user-list__button--first">like</button>
-                <span class="user-list__likes">Нравится: </span><span class="user-list__likes-counter">215</span>
+                <span class="user-list__likes">Нравится: </span><span class="user-list__likes-counter user-list__likes-counter--first"> 215</span>
               </div>
             </div>
           </div>
@@ -280,10 +280,10 @@
               </div>
               <div class="photo-editor__buttons">
                 <div class="photo-editor__button-post-container">
-                  <button class="photo-editor__post button">Запостить</button>
+                  <button type="submit" class="photo-editor__post button">Запостить</button>
                 </div>
                 <div class="photo-editor__button-cancellation-container">
-                  <button class="photo-editor__cancellation button">Отмена</button>
+                  <button type="submit" class="photo-editor__cancellation button">Отмена</button>
                 </div>
               </div>
             </div>
