@@ -1,42 +1,67 @@
 .user-list__item {
-	background-color: @gray;
-	margin-bottom: 20px;
+  background-color: @gray;
+  margin-bottom: 20px;
 }
 
 .user-list__author-name {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .user-list__author-time {
-	margin-left: 5px;
-	font-size: 12px;
-	line-height: 24px;
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 .user-list__text {
-	margin-bottom: 20px;
+  margin-bottom: 9px;
+  margin-top: -1px;
 }
 
 .user-list__likes {
-	font-size: 12px;
-	text-transform: uppercase;
-	color: @red;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: @red;
 }
 
 .user-list__likes-counter {
-	font-size: 12px;
-	text-transform: uppercase;
-	color: @red;
-}
-
-.user-list__author-image {
-	background-size: cover;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: @red;
 }
 
 .user-list__content-container {
-  padding: 23px 0;
+  padding: 14px 17px;
+  background-color: @gray;
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    position: absolute;
+    padding: 7px 3px;
+    content: "панорама дня";
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: @white;
+    width: 136px;
+    height: 23px;
+    text-align: center;
+    vertical-align: middle;
+    top: -144px;
+    right: 67px;
+    left: calc(100% - 140px);
+    z-index: 2;
+    background-color: @red;
+  }
+}
+
+.user-list__content-wrapper {
+  padding: 13px 17px;
+  padding-bottom: 16px;
 }
 
 .user-list__button {
@@ -47,30 +72,11 @@
   background-color: @gray;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
+  margin-right: 10px;
 }
 
-.filters__button {
-  width: 320px;
-  padding: 20px 0;
-  color: @white;
-  line-height: 30px;
-  font-weight: 700;
-  background-color: @green;
-  border-radius: 5px;
-
-  &:hover,
-  &:focus {
-    background-color: @green-hover;
-    }
-
-    &:active {
-      color: @green-pale;
-    }
-
-    &:disabled {
-      color: @white;
-      background-color: @gray;
-    }
+.user-list__span-wrapper{
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -84,21 +90,90 @@
   }
 
   .user-list__content-container {
-  padding: 25px 28px;
+    padding: 25px 28px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
   }
 
   .user-list__article {
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .user-list__content-wrapper {
+    padding: 18px 27px;
+    padding-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    min-height: 107px;
+  }
+
+  .user-list__button {
+    position: absolute;
+    top: 8px;
+    left: 230px;
+    &--first {
+      position: static;
+      padding: 0;
+      margin: 0;
+      margin-left: 10px;
+      background-position: 106% 50%;
+      order: 3;
+    }
+  }
+
+  .user-list__likes-wrapper {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    z-index: 3;
+  }
+
+  .user-list__like-wrapper {
+    position: relative;
+    margin-top: auto;
   }
 
   .user-list__content-container {
-    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 51px;
+    &::before {
+      top: -453px;
+    }
   }
 
+  .user-list__author-image--first {
+    display: block;
+    height: 508px;
+    margin: 0 auto;
+  }
+
+  .user-list__likes-counter {
+    &--first {
+      margin-left: 10px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .user-list__likes-wrapper {
-    right: 20px;
+    right: 29px;
+  }
+
+  .user-list__content-container {
+    padding: 24px 28px;
+    padding-bottom: 14px;
+  }
+
+  .user-list__item {
+    margin-bottom: 55px;
+  }
+
+  .user-list__author-image--first {
+    height: 505px;
   }
 }

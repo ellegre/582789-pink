@@ -1,16 +1,13 @@
 .promo {
-  position: relative;
-	background-color: @dark-blue;
-	background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 54% 100%, center -218px;
-  background-size: 40%, cover;
-  margin-bottom: 303px;
-  min-height: 395px;
+  padding-bottom: 30px;
+  padding-top: 420px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .promo__wrapper {
-  border-top: 1px solid @black;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .promo__title {
@@ -26,27 +23,25 @@
 }
 
 .promo__download {
-  position: absolute;
+  margin-top: 400px;
   padding-bottom: 35px;
-  width: 360px;
-  top: 396px;
-  background-color: @darkest-blue;
+  padding-top: 25px;
+  width: 100%;
   text-align: center;
 }
 
 .promo__link {
   display: block;
+  text-align: center;
   margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  padding: 15px 0;
-  width: 275px;
+  margin-bottom: 21px;
+  padding: 14px 10px;
+  width: 277px;
   font-size: 18px;
   font-weight: 700;
   color: @white;
-  background-color: @darkest-blue;
   border: 3px solid @white;
-  border-radius: 48px;
+  border-radius: 46px;
   box-sizing: border-box;
 }
 
@@ -54,7 +49,7 @@
   .list;
   .flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 }
 
 .promo__list-link {
@@ -62,11 +57,10 @@
   font-size: 0;
   width: 70px;
   height: 70px;
-
   &--apple {
     background-image: url("../img/logo-apple.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 16% 29%;
   }
   &--android {
     background-image: url("../img/logo-android.svg");
@@ -76,7 +70,7 @@
   &--windows {
     background-image: url("../img/logo-microsoft.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 85% 50%;
   }
 }
 
@@ -88,54 +82,75 @@
   color: @white;
   font-weight: 300;
   margin: 0;
-  padding: 0 40px;
+  padding: 0 18px;
 }
 
 @media (min-width: @tablet-width) {
-
-  .promo {
-  background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 49% 199%, center 0px;
-  background-size: 55%, cover;
-  }
-
-  .promo__link {
-    background: transparent;
-  }
-
-  .promo__wrapper {
-    diplay: flex;
-    flex-direction: column;
-  }
-
   .promo__title {
     display: block;
     width: 215px;
-  }
-
-  .promo__download {
-    position: static;
-    background-color: transparent ;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 29px;
   }
 
   .promo {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .promo__wrapper {
+    width: 300px;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 90px;
+  }
+
+  .promo__link {
+    width: 300px;
+    margin-bottom: 36px;
+  }
+
+  .promo__text {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .promo__list {
+    margin-bottom: 26px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
-  position: relative;
-  background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 67% 100%, center 0px;
-  background-size: 54%, cover;
+    margin:0;
+    width: 960px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .promo__title {
+    padding: 0;
     font-size: 50px;
-    margin-top: 115px;
-    margin-right: 30px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+
+  .promo__wrapper {
+    margin:0;
+    padding-top: 112px;
+    padding-left: 0;
+  }
+
+  .promo__link {
+    margin-bottom: 59px;
+  }
+
+  .promo__list {
+    margin-bottom: 41px;
   }
 }

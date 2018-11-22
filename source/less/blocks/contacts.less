@@ -1,30 +1,42 @@
 .contacts {
-  padding-top: 45px;
-  padding-bottom: 50px;
-	background-color: @white;
-	text-align: center;
+  padding-top: 41px;
+  background-color: @white;
+  text-align: center;
 }
 
 .contacts__title {
   margin: 0;
-	margin-bottom: 45px;
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .contacts__text {
-	margin-bottom: 10px;
-	line-height: auto;
-	font-weight: 700;
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .contacts__data {
-	margin-bottom: 30px;
-	color: @red;
-	font-size: 24px;
-	line-height: auto;
-	font-weight: 300;
+  margin: 0;
+  color: @red;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.contacts__wrapper-data {
+  padding-top: 31px;
+}
+
+.contacts__wrapper-text {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.contacts__wrapper-text:nth-child(2) {
+  margin-bottom: 20px;
 }
 
 .contacts__map {
@@ -35,31 +47,63 @@
 @media (min-width: @tablet-width) {
   .contacts__wrapper-data {
     .flex;
-    justify-content: center;
+    padding-left: 47px;
+    padding-right: 29px;
+    padding-top: 26px;
   }
 
-  .contacts__wrapper-text:first-child {
-    margin-right: 55px;
+  .contacts__wrapper-text {
+    margin-bottom: 0;
   }
 
   .contacts__wrapper-text:nth-child(2){
-    margin-left: 55px;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  .contacts__wrapper-text:nth-child(3){
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__wrapper-text:nth-child(3) .contacts__text {
+    padding-top: 41px;
+    padding-bottom: 5px;
   }
 
   .contacts__title {
     padding: 0 113px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__text {
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  .contacts {
+    padding-top: 47px;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    padding-top: 60px;
+  }
+
   .contacts__title {
     font-size: 50px;
     line-height: 60px;
-    margin-bottom: 60px
+    margin-bottom: 53px
   }
 
   .contacts__wrapper-data {
     justify-content: space-between;
+    padding-top: 0;
   }
 
   .contacts__wrapper-text:first-child {
@@ -70,6 +114,14 @@
   }
   .contacts__wrapper-text:nth-child(3) {
     order: 2;
-    width: 220px;
+    margin-left: 101px;
+  }
+
+  .contacts__wrapper-text:nth-child(3) .contacts__text {
+    padding-top: 0;
+  }
+
+  .contacts__text {
+    margin-bottom: 17px;
   }
 }
