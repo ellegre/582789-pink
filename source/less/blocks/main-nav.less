@@ -1,53 +1,119 @@
 .main-nav {
   position: relative;
   text-align: center;
+  background-color: @dark-blue;
 }
 
 .main-nav__list {
-	.list;
+  .list;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: -60px;
-  right: 16px;
+  top: -63px;
+  right: 0px;
   z-index: 2;
+  display: block;
   width: 70px;
   height: 50px;
   background-color: @dark-blue;
   cursor: pointer;
   border: none;
-
-  &:hover path{
-    fill: @red;
+  &:hover {
+    background-color: @red;
   }
-  &:active path{
-    fill: @red-active;
+  &:active {
+    background-color: @red-active;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 17px;
-  width: 70px;
-  height: 50px;
-  background-color: @white;
-  box-shadow: 0 8px 0 0 @white, 0 16 0 0 @white;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: @red-active;
-  box-shadow: 0 8px 0 0 @red-active, 0 16 0 0 @red-active;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
-@media (max-width: @mobile-width-only) {
 
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+    &--active {
+      background-color: @red-active;
+    }
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .site-list__item--active a {
+    text-decoration: underline;
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
+    background-color: @dark-blue;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav {
-
+  .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -56,10 +122,14 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
   }
 
   .main-nav {
     text-align: none;
     width: 100%;
+    background-color: @menu-back;
   }
 }

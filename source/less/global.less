@@ -1,21 +1,22 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: 400;
-	color: @dark-blue;
-	background-color: @dark-gray;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @dark-blue;
+  background-color: @white;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-	max-width: 100%;
-	heigth: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -37,35 +38,23 @@ input[type="radio"].visually-hidden {
 
 .container {
   width: 320px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .container {
     width: 660px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .container {
-    width: 940px;
+    width: 960px;
+    padding: 0 10px;
   }
 }
 
-@media (max-width: @desktop-width) {
-  .container {
-    width: 660px;
-  }
-}
-
-@media (max-width: @tablet-width) {
-  .container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-  }
-}

@@ -2,47 +2,36 @@
   background-color: @white;
 }
 
-.form-main__intro-container {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 99% 37%;
-  background-size: cover;
-  background-color: @dark-blue;
-}
-
-.form-main__title {
-	margin: 0;
-  width: 240px;
-	padding-top: 35px;
-	padding-bottom: 50px;
-	color: @white;
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: 300;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .form-main__story {
-	padding-top: 55px;
-	padding-bottom: 50px;
+  padding-top: 47px;
+  padding-bottom: 27px;
   text-align: center;
-  width: 280px;
   margin: 0 auto;
+  margin-bottom: 7px;
+  &--to-hide {
+    display: none;
+  }
 }
 
 .form-main__text {
-	margin: 0;
-	line-height: 30px;
+  margin: 0;
+  line-height: 30px;
+  padding: 0 5px;
 }
 
 @media (min-width: @tablet-width) {
   .form-main__story {
-    width: 620px;
+    width: 523px;
+    text-align: center;
+    margin-bottom: 38px;
+    padding-top: 92px;
+    &--to-hide {
+      display: inline-block;
+    }
   }
 
-  .form-main__intro-container {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+  .form-main__text {
+    font-size: 18px;
   }
 }
 
@@ -52,19 +41,7 @@
   }
 
   .form-main__text {
-    width: 611px;
+    width: 760px;
     margin: 0 auto;
-  }
-
-  .form-main__title {
-    width: 820px;
-    font-size: 50px;
-    line-height: 70px;
-    padding-top: 80px;
-    padding-bottom: 90px;
-  }
-
-  .form-main__intro-container {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }

@@ -16,48 +16,58 @@
   text-decoration: underline;
 }
 
+.effect__span {
+  display: block;
+}
+
 .effect__position-wrapper {
   position: relative;
   margin-left: 310px;
   text-align: left;
-  padding: 90px 0;
-}
-
-.effect__position-wrapper::before {
-  position: absolute;
-  content: "";
-  width: 166px;
-  height: 166px;
-  border-radius: 50%;
-  border: 12px solid @red;
-  z-index: 3;
-  top: 111px;
-  left: -285px;
-}
-
-.effect__position-wrapper::after {
-  position: absolute;
-  content: "24";
-  width: 114px;
-  height: 45px;
-  color:@red;
-  z-index: 4;
-  top: 186px;
-  font-size: 96px;
-  font-weight: 700;
-  left: -254px;
+  padding-top: 97px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 173px;
+    height: 173px;
+    border-radius: 50%;
+    border: 12px solid @red;
+    z-index: 3;
+    top: 118px;
+    left: -289px;
+  }
+  &::after {
+    position: absolute;
+    content: "24";
+    width: 114px;
+    height: 45px;
+    color:@red;
+    z-index: 4;
+    top: 200px;
+    font-size: 96px;
+    font-weight: 700;
+    left: -245px;
+  }
 }
 
 .effect__wrapper {
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
-  background-size: 34%;
-  background-position: 6% 57%;
+  background-size: 36%;
+  background-position: 21px 58px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .effect {
     display: block;
+  }
+
+  .effect__text {
+    width: 295px;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 10px;
   }
 }
 
@@ -68,21 +78,50 @@
 
   .effect__wrapper {
     padding: 40px;
+    padding-bottom: 113px;
     background-image: url("../img/icon-timer.svg");
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: 0 57%;
+    background-repeat: no-repeat;
+    background-size: 32%;
+    background-position: 6px 22%;
+    &::before {
+      top: 82px;
+      left: -312px;
+      width: 180px;
+      height: 180px;
+      border: 14px solid @red;
+    }
   }
 
-  .effect__position-wrapper::before {
-    top: 82px;
-    left: -312px;
-    width: 180px;
-    height: 180px;
-    border: 14px solid @red;
+  .effect__position-wrapper {
+    margin-left: 335px;
+    padding-top: 73px;
+    &::before {
+      width: 220px;
+      height: 220px;
+      border: 19px solid #d22856;
+      top: 51px;
+      left: -345px;
+    }
+    &::after {
+      top: 161px;
+      font-size: 120px;
+      left: -284px;
+    }
   }
 
-  .effect__position-wrapper::after {
-    top: 167px;
+  .effect__span {
+    display: inline-block;
+  }
+
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    padding-top: 22px;
+    padding-bottom: 34px;
+  }
+
+  .effect__link {
+    font-size: 18px;
   }
 }
