@@ -324,24 +324,22 @@
       });
 
       function initMap() {
-        var coordinates = {lat: 47.212325, lng: 38.933663},
+        var pos = {lat: 59.938649, lng: 30.323255};
+        var opt = {
+          center: pos,
+          zoom: 10,
+        };
 
-            map = new google.maps.Map(document.getElementByClassName('map'), {
-                center: coordinates
-            }),
+        var myMap = new google.maps.Map(document.getElementByClassName('map'), opt);
 
-            marker = new google.maps.Marker({
-                position: coordinates,
-                map: map
-            });
-          }
-
-          image = 'img/icon-map-marker.svg',
-          marker = new google.maps.Marker({
-              position: coordinates,
-              map: map,
-              icon: image
-          });
+        var marker = new google.maps.Marker({
+                position: pos,
+                map: myMap,
+                icon: 'img/icon-map-marker.svg'
+      });
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACWCWU5_QA9fEcWgRc5aseb-WyoyCedQA&callback=initMap">
       </script>
   </body>
 </html>
