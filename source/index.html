@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div style="display:none">
@@ -307,39 +307,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-
-      function initMap() {
-        var pos = {lat: 59.938649, lng: 30.323255};
-        var opt = {
-          center: pos,
-          zoom: 10,
-        };
-
-        var myMap = new google.maps.Map(document.getElementByClassName('map'), opt);
-
-        var marker = new google.maps.Marker({
-                position: pos,
-                map: myMap,
-                icon: 'img/icon-map-marker.svg'
-      });
-      </script>
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACWCWU5_QA9fEcWgRc5aseb-WyoyCedQA&callback=initMap">
-      </script>
   </body>
 </html>
