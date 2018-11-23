@@ -89,9 +89,8 @@
   margin-right: 32px;
 }
 
-.photo-editor__svg path{
+.photo-editor__svg {
   fill: @svg;
-  &:focus,
   &:hover {
     fill: @svg-hover;
   }
@@ -125,6 +124,11 @@
   .photo-editor__item:nth-child(2) {
     margin-left: 0;
   }
+
+  .photo-editor__svg {
+    fill: @red;
+  }
+}
 
   .photo-editor__item:nth-child(3) {
     width: 20px;
