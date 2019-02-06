@@ -62,11 +62,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml())
-    .pipe(gulp.dest("build"));
-});
 
 gulp.task("clean", function () {
   return del("build");
