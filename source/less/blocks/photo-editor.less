@@ -20,6 +20,14 @@
   color: @red;
   margin: 0 auto;
   margin-bottom: 10px;
+  &:hover,
+  &:focus {
+    background-color: @red;
+    color: @white;
+  }
+  &:active {
+    color: @pale-red;
+  }
 }
 
 .photo-editor__cancellation {
@@ -27,6 +35,16 @@
   border-radius: 50px;
   border: 3px solid @gray-border;
   color: @gray-border;
+  &:hover,
+  &:focus {
+    border-color: @svg;
+    background-color: @white;
+    color: @svg;
+  }
+  &:active {
+    background-color: @svg;
+    color: @white;
+  }
 }
 
 .photo-editor__image {
@@ -77,7 +95,6 @@
   height: 55px;
   width: 55px;
   border: none;
-  background-color: @gray;
   margin-left: 30px;
 }
 
@@ -89,8 +106,7 @@
   margin-right: 32px;
 }
 
-.photo-editor__svg path{
-  fill: @svg;
+.photo-editor__svg {
   &:focus,
   &:hover {
     fill: @svg-hover;
@@ -107,6 +123,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo-editor {
+    background-color: @gray;
+  }
+
   .photo-editor__form {
     .flex;
   }
@@ -115,11 +135,16 @@
     width: 204px;
   }
 
+  .photo-editor__svg {
+    fill: @red;
+  }
+
   .photo-editor__item {
     margin: 0;
     margin-bottom: 48px;
     width: 25px;
     height: 25px;
+    background-color: @gray;
   }
 
   .photo-editor__item:nth-child(2) {
@@ -316,7 +341,6 @@
     padding-left: 81px;
     padding-top: 57px;
     padding-bottom: 54px;
-    background-color: @gray;
   }
 
   .photo-editor__icons-sliders-container {
